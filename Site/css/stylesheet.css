@@ -151,20 +151,23 @@ body, html {
    /* border: red solid 2px;*/
     /*margin-right: -4rem;*/
     flex-basis: 33%;
+    text-align: center;
 }
 .project2-wrapper {
    /* border: green solid 2px;*/
    flex-basis: 33%;
+   text-align: center;
     
 }
 .project3-wrapper {
    /* border: yellow solid 2px;*/
    flex-basis: 33%;
+   text-align: center;
 }
 .project1-text {
     color: #05AFF2;
     font-size: 2rem;
-    width: 90%;
+    padding: 20px;
     /*margin-left: 10px;*/
     text-align: center;
 }
@@ -236,13 +239,15 @@ input {
 	width: 20rem;
 	font-size: 1.2rem;
 	border-radius: 10px;
-	padding: 0 1rem;
+    padding: 0 1rem;
+    border: 0;
 }
 
 textarea {
     height: 45%;
     width: 80%;
     border-radius: 10px;
+    border: 0;
 }
 .submit-button {
 	margin: 2rem 0;
