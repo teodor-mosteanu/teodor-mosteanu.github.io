@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-page {
+    background-color: #eee;
+    padding: 0px;
+}
+
+.navigation-header {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    width: 100%;
+/*  border: 2px solid black;*/
+    padding: 20px;
+    background-color: #eee;
+}
+.company-logo {
+    width :50%;
+    height: 55%;
+    max-width: 300px;
+}
+
+.navi {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  /*  border: 1px solid black;*/
+}
+
+.nav-button {
+    border-left: 30px;
+    text-align: -webkit-match-parent;
+}
+
+.container {
+  /*  border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: 150px; 
+}
+
+.input-email {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-title {
+    display: flex;
+    justify-content: space-between;
+   /* border:1px solid black;*/
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.title {
+    text-align: center;
+}
+
+.sign-up-button {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+    margin-top: 15px;
+    background-color:#f1c40f;
+    height:30px;
+}
+
+.reasons-container {
+    display:flex;
+    flex-direction: row;   
+  /*  border: 1px solid red; */
+    height: 300px;
+    margin-top: 5%;
+    background-color: #eee;
+}
+
+.picto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2.5em;
+   /* border: 1px solid blue;*/
+    margin-left: 20%;
+    color: #da800a;
+}
+
+.fab.fa-gripfire {
+    margin-top: 30%;
+    margin-left: 20%;
+}
+.info {
+    margin-top: 40px;
+    margin-bottom: 0px;;
+}
+.info-para {
+    margin: 0px;
+}
+
+.pictogram-info {
+    margin-left: 3vw;
+    height: 100%;
+    max-height: 50px;
+}
+
+.convince-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.purchase-options {
+   /* border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    margin-top: 5%;
+}
+
+.option {
+    border:1px solid black;
+    width: 20%;
+    margin-left: 3%;
+}
+
+.option-title {
+    background-color: #ddd;
+    margin: 0px;
+    height: 15%;
+    padding: 10px;
+    text-align: center;
+}
+
+.price {
+    font-size: 30px;
+    text-align: center;
+}
+
+.option-explanation {
+    text-align: center;
+}
+
+.make-purchase {
+    display: block;
+    margin: auto;
+    height: 10%;
+    width: 40%;
+    background-color: #f1c40f;
+    border: 0px;
+}
+
+.navigation-footer {
+    background-color: #ddd;
+    text-align: end;
+    display: block;
+    width: 67%;
+    margin-top: 3%;
+    margin-left: 18%;
+    height: 70px;
+    padding: 20px;
+}
+
+.navi2 {
+    display: flex;
+    justify-content: end;
+}
+
+.nav-button{
+    margin-left: 3%;
+}
+.copywright {
+    margin-top: 10px;
+}
+
+@media (max-width: 750px) {
+    .navigation-header {
+        display: flex;
+        justify-content:space-between;
+        position: -webkit-sticky;
+        position: sticky;
+        flex-direction: column;
+        height: 35%;
+    }
+    .navi {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        margin-left: 35%;
+    }
+    .make-purchase {
+        margin-bottom: 15px;
+    }
+    .company-logo {
+        margin-left: 25%;
+        margin-bottom: 5%;
+    }
+    .picto {
+        margin-left: 0%;
+    }
+    .info {
+        margin-top: 15px;
+    }
+    .video-frame {
+        width: 500;
+    }
+    .purchase-options {
+            border: 1px solid green;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 60%;
+            height: 350px;
+    }
+    .option {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        height: 320px;
+    }
+    .price {
+        margin-bottom: 15px;
+    }
+    .option-title {
+        margin-bottom: 20px;
+    }
+    .make-purchase {
+        margin-bottom: 15px;
+    }
+    .navigation-footer {
+        margin-top: 70%;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+    
