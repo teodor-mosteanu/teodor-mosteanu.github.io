@@ -33,6 +33,36 @@ body, html {
     margin-top: -3.1rem;
 }
 
+@media screen and (min-width: 1600px) {
+    .parallax {
+        /* the image used */
+        background-image: url('https://www.m12solutions.co.uk/wp-content/uploads/2019/12/Laptop-screen-with-code-scaled.jpg');
+      
+        /* full height */
+        height: 100%; 
+        margin-top: -30rem;
+      
+        /* create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+    .text-about {
+        height:1000px;
+       background-color:#192640;
+        font-size:36px;
+       /* margin-top: -3.1rem;*/
+    }
+    .portfolio-wrapper {
+        height:1000px;
+       background-color:#192640;
+        font-size:36px;
+       /* margin-top: -3.1rem;*/
+    }
+}
+
 .about-social {
     color:#EAAEF2;
     display: flex;
