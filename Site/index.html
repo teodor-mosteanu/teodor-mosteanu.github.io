@@ -23,14 +23,20 @@
         <div class="text-about">
             <h1 class="about" id="about">.whoiam</h1>
             <img src="./img/teo.png" alt="Teo smiling" class="its-me">
-            <p class="about-text">hello, my name is <b class="name">&ltteodor mosteanu&gt</b> and I am learning front end on FrontEndMasters.com</p>
+            <p class="about-text">hello, my name is <b class="name">&ltteodor mosteanu&gt</b> and I am a junior front-end developer</p>
             <section class="about-social">
                 <a href="http://www.facebook.com/teodor.mosteanu" target="_blank" rel="noopener noreferrer" class="link-project"><i class="fab fa-facebook-f"></i></a></i>
                 <a href="https://www.linkedin.com/in/teodor-mosteanu-0bb54a21/" target="_blank" rel="noopener noreferrer" class="link-project"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://twitter.com/TMosteanu" target="_blank" rel="noopener noreferrer" class="link-project"><i class="fab fa-twitter"></i></a>
             </section>
         </div>
-        <nav class="scroll-down">&lth1&gt <br>keep on scrolling down <br>&lt/h1&gt</nav>
+
+        <nav class="scroll-down">
+
+          <div class="bounce"></div> 
+        
+        </nav>
+        <p class="score"></p>
 <div class="parallax"></div>
 
         <div class="portfolio-wrapper">
@@ -70,8 +76,9 @@
     <div class="text-about">
         <h1 class="about" id="contact">.contact_me</h1>
         <p class="name">Any projects? Let's get in touch!</p>
-			<form method="POST" action="" class="contact-form">
-				<fieldset>
+			<form method="POST" action="https://formspree.io/maypyjrl" class="contact-form">
+        
+        <fieldset>
 					<legend>Your contact information</legend>
 					<label for="name">Your name </label>
 					<input type="text" id="name" name="name">
@@ -81,17 +88,18 @@
 					<input type="email" id="email" name="email">
 
                 </fieldset>
+
                 <fieldset>
 					<legend>Leave me a message </legend>
 
 					<label for="comments">Message:</label>
 					<textarea id="comments" name="comments"></textarea>
 
-					
 					<input id="send_to" type="hidden" name="send_to" value="yourEmailHere">
 					<button type="submit" class="submit-button">Submit</button>
 				</fieldset>
-            </form>
+        </form>
+            <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
             <script src="./JS/script.js"></script>
 </body>
 </html>
