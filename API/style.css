@@ -1,0 +1,48 @@
+@keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes psychadelic {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  .main-header {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    align-items: center;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .mole {
+    margin-top: 3rem;
+    height: 330px;
+    width: 334px;
+    background-color: brown;
+    border-radius: 50%;
+  }
+.selector {
+  width: 40%;
+}
+  .color {
+    animation: psychadelic 3s linear infinite;
+  }
+
+  .spin {
+    animation: spin 1s ease-in-out infinite;
+  }
+  .hidden{
+      display: none;
+  }
+
+  .doggos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
