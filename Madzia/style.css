@@ -15,51 +15,7 @@
   font-weight: 900;
 }
 
-@media only screen and (min-width: 2000px) {
-  .abc {
-    font-size: 3.8em;
-  }
-  .buttons-menu {
-    margin-left: 59%;
-}
-}
 
-@media only screen and (min-width: 900px) {
-  .buttons-menu {
-    margin-left: 51%;
-}
-  .abc {
-    font-size: 1.2em;
-    font-weight: 900;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .buttons-menu {
-    margin-left: 0%;
-    display: flex;
-}
-  .abc {
-    font-size: 0.8em;
-    font-weight: 900;
-  }
-  .navbar-toggler {
-    margin-left: 48%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 800px) {
-  .buttons-menu {
-    margin-left: 70%;
-
-}
-  .abc {
-    font-size: 0.8em;
-    font-weight: 900;
-  }
-  .navbar-toggler {
-    margin-left: 50%;
-  }
-}
 
 html, body {
     position: relative;
@@ -152,6 +108,8 @@ html, body {
 
 /*home page*/
 
+/*typewritter*/
+
 .rolling-text {
   margin-top: 5%;
   text-decoration: none;
@@ -168,10 +126,14 @@ html, body {
   font-size: 3vw;
 }
 
+.welcome-page {
+  overflow: hidden;
+}
+
 .welcome {
-  width: 40%;
-  height: 40%;
-  margin-left: 30%;
+  width: 85%;
+  height: 85%;
+  margin-left: 6%;
   transition: transform .8s;
 }
 
@@ -186,7 +148,7 @@ html, body {
 }
 
 .main_image_container {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 /*about page */
@@ -205,7 +167,294 @@ article {
     font-weight: 900;
     font-size: 2.5vw;
 }
+.text-information {
+  padding: 2% 25% 0 25%;
+}
+
+.head {
+  text-align: center;
+  padding-top: 4%;
+}
+.main-head {
+  text-align: center;
+  padding-top: 4%;
+}
+
+.mag-photo {
+  width: 45%;
+  height: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption-mag {
+  text-align: center;
+  font-size: x-large;
+}
+.tom-gallery {
+  height: 95%;
+  width:95%;
+}
+
+.contact-info {
+  margin-top: 15%;
+  margin-bottom: 20%;
+}
+
+
+/* Story styles */
+
+/*Guide page*/
+
+.images-points {
+  display:flex;
+  height: 600px;
+  width:600px;
+  flex-direction: column;
+  margin-left: -22%;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+
+}
+.headphone {
+  width:250px;
+  height:170px;
+}
+.intro-pic {
+  width:175px;
+  height:175px;
+}
+
+.enjoy {
+  width:185px;
+  height:185px;
+}
+
+.guide-info {
+  font-weight: 300;
+  height:140px;
+  margin-top: 8%;
+  font-family: 'Lato', sans-serif;
+} 
 
 
 
+/*Cherry pickers */
+.welcoming-cherry {
+  
+  width: 45%;
+  height: 45%;
+  margin-top: -10%;
+  margin-left: -30%;
+}
+.cherry-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-weight: 900;
+  font-size: 3rem;
+}
 
+.audio-cherry {
+  position: absolute;
+  top: 45%;
+  left: 50%
+}
+
+.audio-cherry-intro {
+  position: absolute;
+  top: 15%;
+  left: 50%
+}
+
+/*tea Maker */
+
+.welcoming-tea {
+  width: 55%;
+  height: 55%;
+  margin-top: -8%;
+  margin-left: 35%;
+}
+
+.tea-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.audio-tea {
+  position: absolute;
+  top: 45%;
+  left: 10%
+}
+
+.audio-tea-intro {
+  position: absolute;
+  top: 15%;
+  left: 10%
+}
+
+/*A taste from my hand */
+
+.welcoming-taste {
+  width: 90%;
+  height: 90%;
+  margin-top: -18%;
+  margin-left: 0%;
+}
+
+.taste-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.audio-taste {
+  position: absolute;
+  top: 65%;
+  left: 10%
+}
+
+.audio-taste-intro {
+  position: absolute;
+  top: 65%;
+  left: 50%
+}
+
+/*Mama Chicken */
+
+.welcoming-chicken {
+  width: 50%;
+  height: 50%;
+  margin-top: -6%;
+  margin-left: -10%;
+  transform: rotate(90deg);
+}
+
+.chicken-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.audio-chicken {
+  position: absolute;
+  top: 65%;
+  left: 10%
+}
+
+.audio-chicken-intro {
+  position: absolute;
+  top: 65%;
+  left: 60%
+}
+
+/* @media only screen and (max-width: 500px) {
+  .welcoming-cherry {
+  
+    width: 45%;
+    height: 45%;
+    margin-top: -10%;
+    margin-left: -25%;
+  }
+  .cherry-main {
+    z-index: 999;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+  .audio-cherry {
+    position: absolute;
+    top: 55%;
+    left: 50%
+  }
+} */
+
+.swiper-button-next {
+  color:black !important;
+}
+
+.swiper-button-prev {
+  color:black !important;
+}
+
+
+@media only screen and (min-width: 2000px) {
+  .abc {
+    font-size: 3.8em;
+  }
+  .buttons-menu {
+    margin-left: 59%;
+}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1440){
+  .buttons-menu {
+    margin-left: 51%;
+}
+  .abc {
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+  .guide-info {
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 22%;
+    margin-top: 15%;
+    margin-left: 2%;
+    font-family: 'Lato', sans-serif;
+  }
+  .images-points {
+    display:flex;
+    flex-direction: column;
+    width:19%;
+    height:30%;
+    margin-top: -40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .buttons-menu {
+    margin-left: 0%;
+    display: flex;
+}
+  .abc {
+    font-size: 0.8em;
+    font-weight: 900;
+  }
+  .navbar-toggler {
+    margin-left: 48%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  .buttons-menu {
+    margin-left: 70%;
+
+}
+  .abc {
+    font-size: 0.8em;
+    font-weight: 900;
+  }
+  .navbar-toggler {
+    margin-left: 50%;
+  }
+}

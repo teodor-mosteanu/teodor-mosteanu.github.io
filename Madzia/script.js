@@ -65,6 +65,7 @@ var TxtType = function(el, toRotate, period) {
     };
 
 
+
 //swiper init
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -76,10 +77,6 @@ var mySwiper = new Swiper('.swiper-container', {
         crossFade: true
       },
       hashNavigation: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
   
     // Navigation arrows
     navigation: {
