@@ -68,7 +68,7 @@ html, body {
   }
 
 
-    button {
+    /* button {
         border: none;
         background: #ff7a59;
         color: #fff;
@@ -85,7 +85,7 @@ html, body {
         color: #ff7a59;
         border: #ff7a59 solid 1px;
         background:#fff;
-      }
+      } */
 
   .get-started {
       position: absolute;
@@ -315,7 +315,7 @@ article {
   color: #000;
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 45%;
   font-weight: 900;
   font-size: 3rem;
 }
@@ -395,7 +395,9 @@ article {
 .swiper-button-prev {
   color:black !important;
 }
-
+ .buttons-menu {
+  margin-left: 45%;
+} 
 
 @media only screen and (min-width: 2000px) {
   .abc {
@@ -406,7 +408,7 @@ article {
 }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440){
+/* @media only screen and (min-width: 1000px) and (max-width: 1440){
   .buttons-menu {
     margin-left: 51%;
 }
@@ -430,9 +432,9 @@ article {
     height:30%;
     margin-top: -40%;
   }
-}
+} */
 
-@media only screen and (max-width: 800px) {
+ /* @media only screen and (max-width: 800px) {
   .buttons-menu {
     margin-left: 0%;
     display: flex;
@@ -444,8 +446,8 @@ article {
   .navbar-toggler {
     margin-left: 48%;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+} */
+ /* @media only screen and (min-width: 600px) and (max-width: 800px) {
   .buttons-menu {
     margin-left: 70%;
 
@@ -457,4 +459,232 @@ article {
   .navbar-toggler {
     margin-left: 50%;
   }
+}  */ 
+/* for mobile in portrait */
+
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+
+
+  /* story page */
+    /* Guide page */
+
+        .images-points {
+          display: flex;
+         height: 100%;
+          width: 70%;
+         flex-direction: column;
+         margin-left: 0%;
+          flex-shrink: 1;
+          flex-wrap: wrap;
+        
+        }
+        .headphone {
+          width: 250px;
+          height: 170px;
+          position: absolute;
+          top: 7%;
+          left: 37%;
+          transform: scale(1.5);
+        }
+        .intro-pic {
+          width: 175px;
+          height: 175px;
+          position: absolute;
+          top: 34%;
+          left: 41%;
+          transform: scale(2);
+        }
+        
+        .enjoy {
+          position: absolute;
+          top: 65%;
+          left: 42%;
+          transform: scale(2);
+        }
+        
+        .guide-info {
+          font-weight: 300;
+    height: 14%;
+    margin-top: 52%;
+    font-family: 'Lato', sans-serif;
 }
+        
+      /* cherry */
+  .welcoming-cherry {
+  
+    width: 45%;
+    height: 45%;
+    margin-top: -15%;
+    margin-left: 0;
+  } 
+  .cherry-main {
+    z-index: 999;
+    color: #000;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    font-weight: 900;
+    font-size: 6rem;
+  }
+  
+  .audio-cherry {
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    transform: scale(1.8);
+  }
+  
+  .audio-cherry-intro {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    transform: scale(1.8);
+  }
+
+  /* tea maker */
+  .welcoming-tea {
+    width: 55%;
+    height: 45%;
+    margin-top: -15%;
+    margin-left: 0;
+  }
+  
+  .tea-main {
+    z-index: 999;
+    color: #000;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    padding-top: 12%;
+    font-weight: 900;
+    font-size: 6rem;
+  }
+  
+  .audio-tea {
+    position: absolute;
+    top: 68%;
+    left: 30%;
+    transform: scale(1.8);
+  }
+  
+
+  .audio-tea-intro {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 30%;
+    transform: scale(1.8)
+  }
+
+  /*A taste from my hand */
+
+.welcoming-taste {
+  width: 55%;
+  height: 45%;
+  margin-top: -15%;
+  margin-left: 0;
+  transform: scale(1.5);
+}
+
+.taste-main {
+  z-index: 999;
+  color: #000;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding-top: 12%;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.audio-taste {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 30%;
+  transform: scale(1.8)
+}
+
+.audio-taste-intro {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  transform: scale(1.8);
+}
+
+/*Mama Chicken */
+
+.welcoming-chicken {
+  width: 55%;
+  height: 45%;
+  margin-top: -15%;
+  margin-left: 0;
+  transform: scale(1.5);
+  transform: rotate(90deg);
+}
+
+.chicken-main {
+  z-index: 999;
+  color: #000;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding-top: 12%;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.audio-chicken {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 30%;
+  transform: scale(1.8)
+}
+
+.audio-chicken-intro {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  transform: scale(1.8);
+}
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+
+  .images-points {
+    display:flex;
+    height: 500px;
+    width:500px;
+    flex-direction: column;
+    margin-left: -22%;
+    margin-top: 5%;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  
+  }
+  .headphone {
+    width:220px;
+    height:120px;
+  }
+  .intro-pic {
+    width:135px;
+    height:135px;
+  }
+  
+  .enjoy {
+    width:145px;
+    height:145px;
+  }
+  
+  .guide-info {
+    font-weight: 300;
+    height:100px;
+    margin-top: 8%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+  } 
+  
+}
+
