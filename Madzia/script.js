@@ -71,13 +71,14 @@ var TxtType = function(el, toRotate, period) {
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
     fadeEffect: {
         crossFade: true
       },
       hashNavigation: true,
-  
+      
+          // mySwiper.slides[1].allowSlidePrev: false,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -90,14 +91,5 @@ var mySwiper = new Swiper('.swiper-container', {
     },
   })
 
-    // var swiper = new Swiper('.swiper-container', {
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     type: 'progressbar',
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    // });
- 
+  
+  
