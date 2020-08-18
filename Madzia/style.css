@@ -131,10 +131,13 @@ html, body {
 }
 
 .welcome {
-  width: 85%;
-  height: 85%;
-  margin-left: 6%;
+   width: 45%; 
+  height: 20%;
+  /* margin-left: 26%; */
   transition: transform .8s;
+  /* border-radius: 79%; */
+   margin: auto;
+   display: block;
 }
 
 .welcome:hover {
@@ -145,10 +148,16 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 .main_image_container {
   margin-top: 1%;
+  height:60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*about page */
@@ -668,7 +677,7 @@ article {
     margin-left: -22%;
     margin-top: 5%;
     flex-shrink: 1;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   
   }
   .headphone {
