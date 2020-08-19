@@ -111,7 +111,7 @@ html, body {
 /*typewritter*/
 
 .rolling-text {
-  margin-top: 5%;
+  margin-top: 0%;
   text-decoration: none;
   text-align: center;
   color: #000;
@@ -138,6 +138,7 @@ html, body {
   /* border-radius: 79%; */
    margin: auto;
    display: block;
+   margin-top:9%;
 }
 
 .welcome:hover {
@@ -148,6 +149,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 80%;
    
 }
 
@@ -405,7 +407,7 @@ article {
   color:black !important;
 }
  .buttons-menu {
-  margin-left: 45%;
+  margin-left: 40%;
 } 
 
 @media only screen and (min-width: 2000px) {
@@ -475,16 +477,15 @@ article {
 
 
   /* story page */
-
   .bigger1 {
-    font-size: 3.2em !important;
+    font-size: 3.4em !important;
   }
     /* Guide page */
 
         .images-points {
           display: flex;
-         height: 100%;
-          width: 70%;
+         height: 90%;
+          width: 64%;
          flex-direction: column;
          margin-left: 0%;
           flex-shrink: 1;
@@ -517,10 +518,13 @@ article {
         
         .guide-info {
           font-weight: 300;
-    height: 14%;
-    margin-top: 52%;
+    height: 17%;
+    margin-top: 48%;
     font-family: 'Lato', sans-serif;
-}
+}   
+    .miss-align {
+      height:1%;
+    }
         
       /* cherry */
   .welcoming-cherry {
@@ -667,7 +671,8 @@ article {
 
 }
 
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
 
   .images-points {
     display:flex;
@@ -709,5 +714,229 @@ article {
 .text-information {
   padding: 2% 12% 0 12%;
 }
+.typewrite {
+  font-size: 5vw;
 }
+.welcome {
+  width: 75%; 
+ height: 20%;
+ /* margin-left: 26%; */
+ transition: transform .8s;
+ /* border-radius: 79%; */
+  margin: auto;
+  display: block;
+  margin-top:9%;
+}
+}
+
+/* Tablets */
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+
+/* Main Page */
+.main_image_container {
+  transform: scale(1.5);
+}
+
+.buttons-menu {
+  margin-left: 31%;
+}
+
+  /* Story */
+  .images-points {
+    display: flex;
+   height: 90%;
+    width: 64%;
+   flex-direction: column;
+   margin-left: 0%;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  
+  }
+  .headphone {
+    width: 219px;
+    height: 134px;
+    position: absolute;
+    top: 7%;
+    left: 37%;
+    /* transform: scale(1.5); */
+  }
+  .intro-pic {
+    width: 133px;
+    height: 143px;
+    position: absolute;
+    top: 35%;
+    
+    left: 41%;
+    /* transform: scale(2); */
+  }
+  
+  .enjoy {
+    position: absolute;
+    top: 62%;
+    left: 42%;
+    transform: scale(1.5);
+  }
+  
+  .guide-info {
+    font-weight: 300;
+    height: 12%;
+    margin-top: 37%;
+font-family: 'Lato', sans-serif;
+}   
+.miss-align {
+height:1%;
+}
+/* cherry */
+.welcoming-cherry {
+  
+  width: 45%;
+  height: 45%;
+  margin-top: -30%;
+  margin-left: 0;
+} 
+.cherry-main {
+  z-index: 999;
+  color: #000;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.audio-cherry {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  transform: scale(1.8);
+}
+
+.audio-cherry-intro {
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  width: 30%;
+  transform: scale(1.8);
+}
+
+/* tea maker */
+.welcoming-tea {
+  width: 55%;
+  height: 45%;
+  margin-top: -20%;
+  margin-left: 0;
+}
+
+.tea-main {
+  z-index: 999;
+  color: #000;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  padding-top: 0%;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.audio-tea {
+  position: absolute;
+  top: 68%;
+  left: 30%;
+  transform: scale(1.8);
+}
+
+
+.audio-tea-intro {
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  width: 30%;
+  transform: scale(1.8)
+}
+
+/*A taste from my hand */
+
+.welcoming-taste {
+width: 55%;
+height: 45%;
+margin-top: -15%;
+margin-left: 0;
+transform: scale(1.5);
+}
+
+.taste-main {
+z-index: 999;
+color: #000;
+position: relative;
+top: 0%;
+left: 0%;
+padding-top: 12%;
+font-weight: 900;
+font-size: 6rem;
+}
+
+.audio-taste {
+position: absolute;
+top: 7%;
+left: 30%;
+width: 30%;
+transform: scale(1.8)
+}
+
+.audio-taste-intro {
+position: absolute;
+top: 68%;
+left: 30%;
+transform: scale(1.8);
+}
+
+/*Mama Chicken */
+
+.welcoming-chicken {
+width: 55%;
+height: 45%;
+margin-top: -15%;
+margin-left: 0;
+transform: scale(1.5);
+transform: rotate(90deg);
+}
+
+.chicken-main {
+z-index: 999;
+color: #000;
+position: relative;
+top: 0%;
+left: 0%;
+padding-top: 12%;
+font-weight: 900;
+font-size: 6rem;
+}
+
+.audio-chicken {
+position: absolute;
+top: 7%;
+left: 30%;
+width: 30%;
+transform: scale(1.8)
+}
+
+.audio-chicken-intro {
+position: absolute;
+top: 68%;
+left: 30%;
+transform: scale(1.8);
+}
+
+
+}
+
+/* Desktop */
+
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+  }
+
 
