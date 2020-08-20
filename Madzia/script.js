@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
     document.body.classList.remove('fade');
   });
 
+  console.log(window.screen.width);
+  console.log(window.screen.height)
+  
   //typewritter effect
 
 
