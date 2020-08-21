@@ -1,5 +1,8 @@
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
+    zoom: {
+      maxRatio: 2,
+    },
     direction: 'horizontal',
     loop: true,
 
@@ -18,3 +21,14 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   })
+
+  var swiperSlide = document.getElementsByClassName('swiper-slide')
+for(var index = 0; index< swiperSlide.length; index++){
+swiperSlide[index].addEventListener('mouseover',function(e){
+    mySwiper.zoom.in();
+})
+
+swiperSlide[index].addEventListener('mouseout',function(e){
+    mySwiper.zoom.out();
+})
+}

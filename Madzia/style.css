@@ -209,8 +209,8 @@ article {
 }
 
 .contact-info {
-  margin-top: 15%;
-  margin-bottom: 20%;
+  margin-top: 20%;
+    margin-bottom: 31%;
 }
 
 
@@ -528,6 +528,9 @@ and (orientation: portrait) {
 
   @media  screen and  (max-device-width: 736px)  {
  
+    .text-information {
+      padding: 2% 20% 0 20%;
+    }
  /* main page */
 
  .typewrite {
