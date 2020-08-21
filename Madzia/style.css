@@ -527,7 +527,38 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 
   @media  screen and  (max-device-width: 736px)  {
- /* Guide page */
+ 
+ /* main page */
+
+ .typewrite {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: none;
+  font-weight: 800;
+  font-size: 5vw;
+}
+
+.welcome {
+  width: 75%;
+  height: 31%;
+  /* margin-left: 26%; */
+  transition: transform .8s;
+  /* border-radius: 79%; */
+  margin: auto;
+  display: block;
+  margin-top: 9%;
+}
+.main_image_container {
+  margin-top: 1%;
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+    /* Guide page */
 
         .images-points {
           display: flex;
@@ -572,14 +603,14 @@ and (orientation: portrait) {
     font-size: 1rem;
 }   
     .miss-align {
-      height:0%;
+      margin-top: 47%
     }
-  }
+  
 
   /* story page */
-  .bigger1 {
+  /* .bigger1 {
     font-size: 3.4em !important;
-  }
+  } */
         
       /* cherry */
   .welcoming-cherry {
@@ -717,23 +748,30 @@ and (orientation: portrait) {
   top: 67%;
   left: 14%;
 }
-@media only screen and  (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)  {
-  .guide-info {
-    font-weight: 300;
-    height: 16%;
-    margin-top: 48%;
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
+  }
+
 }
-}
-}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .guide-info {
+        font-weight: 300;
+        height: 16%;
+        margin-top: 48%;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+    }
+    }
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Landscape */
 @media only screen
  
 and (min-device-width: 360px)
  
-/* and (max-device-width: 736px) */
+ and (max-device-width: 936px) 
  
 and (-webkit-min-device-pixel-ratio: 2)
  
@@ -847,10 +885,10 @@ and (orientation: landscape) {
 /*A taste from my hand */
 
 .welcoming-taste {
-  width: 82%;
-    height: 90%;
-    margin-top: -27%;
-    margin-left: 0%;
+  width: 73%;
+  height: 90%;
+  margin-top: -22%;
+  margin-left: 0%
 }
 
 .taste-main {
@@ -878,10 +916,10 @@ and (orientation: landscape) {
 /*Mama Chicken */
 
 .welcoming-chicken {
-  width: 61%;
+  width: 50%;
     height: 50%;
-    margin-top: -17%;
-    margin-left: -10%;
+    margin-top: -14%;
+    margin-left: 0%;
     transform: rotate(0deg);
 
 }
@@ -907,13 +945,36 @@ and (orientation: landscape) {
   top: 61%;
     left: 52%;
 }
+
+.welcome {
+  width: 42%;
+  height: 17%;
+  /* margin-left: 26%; */
+  transition: transform .8s;
+  /* border-radius: 79%; */
+  margin: auto;
+  display: block;
+  margin-top: 4%;
+}
 }
 
+@media only screen 
+    and (device-width : 360px) 
+    and (device-height : 780px) 
+    and (-webkit-device-pixel-ratio : 4) {
+.guide-info {
+  font-weight: 300;
+  height: 17%;
+  margin-top: 48%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+    }
 
 /* Tablets */
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+@media only screen and (max-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
   /* Styles */
 
 /* Main Page */
@@ -955,11 +1016,12 @@ and (orientation: landscape) {
   }
   
   .enjoy {
-    position: absolute;
-    top: 62%;
-    left: 42%;
-    transform: scale(1.5);
+      position: absolute;
+      top: 65%;
+      left: 42%;
+      /* transform: scale(1.5); */
   }
+  
   
   .guide-info {
     font-weight: 300;
@@ -1110,16 +1172,27 @@ top: 68%;
 left: 30%;
 transform: scale(1.8);
 }
-@media only screen and  (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)  {
 
 }
-
+/* portrait ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  
+  .images-points {
+    display: flex;
+    height: 590px;
+    padding-top: 3%;
+    width: 488px;
+    flex-direction: column;
+    margin-left: -29%;
+    margin-top: %;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
-
+  }
 /* Desktop */
 
-@media only screen  and (min-width : 1224px) {
+/* @media only screen  and (min-width : 1224px) {
   /* Styles */
-  }
+  
 
 
