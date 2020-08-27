@@ -38,11 +38,23 @@ Colors:
 ******************************************/
 
 :root {
-	--main-button-color: #314259;
+	--main-button-color: #a5c8cc;
   }
 
 /* var(--main-button-color); */
 /* specific atributes */
+
+.border-round {
+	border: 1px solid black;
+	transition: 0.4s ease;
+	/* border-radius: 60%; */
+	-webkit-box-shadow: 11px 14px 19px -17px rgba(0,0,0,0.54);
+	-moz-box-shadow: 11px 14px 19px -17px rgba(0,0,0,0.54);
+	box-shadow: 11px 14px 19px -17px rgba(0,0,0,0.54);
+}
+.border-round:hover {
+	transform:scale(1.1)
+}
 
 .about-conference-main {
 	padding: 0 25% 0 25%;
@@ -185,7 +197,7 @@ a.white {
 	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
 	/* border: 0.125rem solid #00c9db; */
 	border-radius: 2rem;
-	background: url(../images/back-sea.png);
+	background: url(../images/black-sea-btn.png);
 	background-size: cover;
 	color: #D9D9D9;
 	font: 700 0.75rem/0 "Montserrat", sans-serif;
@@ -671,7 +683,7 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	background-color: #4633af;
+	background-color:#4A868C;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 700 0.75rem/2rem "Montserrat", sans-serif;
 	transition: all 0.2s ease;
@@ -681,11 +693,12 @@ input[type='checkbox'] {
     width: 113px;
 	height: 34px;
 	margin-bottom: 1px;
-	-webkit-backface-visibility: hidden;
+	/* -webkit-backface-visibility: hidden; */
 }
 
 .navbar-custom .navbar-brand.logo-text {
-	font: 700 2.375rem/1.5rem "Montserrat", sans-serif;
+	/* font: 700 2.375rem/0.5rem "Montserrat", sans-serif; */
+
 	color: #fff;
 	letter-spacing: -0.5px;
 	text-decoration: none;
@@ -741,7 +754,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .dropdown-item:hover {
-	background-color: #4633af;
+	background-color: white;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -809,8 +822,8 @@ input[type='checkbox'] {
 	
   }
 .header .header-content {
-	padding-top: 8.5rem;
-	padding-bottom: 7rem;
+	padding-top: 10.5rem;
+	padding-bottom: 9rem;
 	text-align: center;
 }
 
@@ -826,7 +839,8 @@ input[type='checkbox'] {
 
 .header #js-rotating {
 	color: #314259;
-}
+} 
+
 
 .header .p-large {
 	margin-bottom: 2rem;
@@ -1325,10 +1339,12 @@ input[type='checkbox'] {
 /*     11. Download     */
 /************************/
 .basic-4 {
-	padding-top: 6.5rem;
-	padding-bottom: 6.75rem;
-	background: url('../images/download-background.jpg') center center no-repeat;
-	background-size: cover; 
+	
+	/* padding-top: 6.5rem; */
+	/* padding-bottom: 6.75rem; */
+	/* background: url('../images/download-background.jpg') center center no-repeat;
+	background-size: cover;  */
+	background-color:#2F2C3D;
 }
 
 .basic-4 .text-container {
@@ -1338,6 +1354,7 @@ input[type='checkbox'] {
 
 .basic-4 h2 {
 	margin-bottom: 1.25rem;
+	text-align: center;
 }
 
 .basic-4 .p-large {
@@ -1486,21 +1503,29 @@ input[type='checkbox'] {
 /**********************************/
 /*     16. Back To Top Button     */
 /**********************************/
-a.back-to-top {
+#myBtn {
 	position: fixed;
 	z-index: 999;
-	right: 0.75rem;
-	bottom: 0.75rem;
-	display: none;
+	right: 1.2rem;
+	bottom: 0.5rem; 
+	/* display: none; */
+	opacity: 0;
+	visibility: hidden;
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
 	background: #00c9db url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
+	transition: 0.4s ease;
 }
 
-a:hover.back-to-top {
+@media (max-width: 599px){
+	body{
+		overflow-x:hidden;
+	}
+}
+#myBtn:hover {
 	background-color: #36edfd; 
 }
 
@@ -1585,7 +1610,7 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+
 	/* General Styles */
 	.p-heading {
 		width: 85%;
@@ -1629,7 +1654,7 @@ a:hover.back-to-top {
         padding: 0.5rem 1.5rem 0.5rem 2rem;
 		box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 		/* background-color: #4633af; */
-		background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/back-sea.png') center center no-repeat;
+		background: linear-gradient(to bottom right, rgba(72, 72, 212, 0), rgba(241, 104, 104, 0)), url('../images/black-sea-header.png') center center no-repeat;
 		background-size: cover;
 	}
 
@@ -1796,7 +1821,9 @@ a:hover.back-to-top {
 
 /* Min-width width 992px */
 @media (min-width: 992px) {
-	
+	.body{
+		overflow-x: hidden;
+	}
 	/* Navigation */
 	.navbar-custom .social-icons {
 		display: block;
@@ -1840,9 +1867,9 @@ a:hover.back-to-top {
 	
 
 	.header .header-content {
-		padding-bottom: 10rem;
+		padding-bottom: 13rem;
 		text-align: center;
-		padding-top: 11rem;
+		padding-top: 13rem;
 	}
 
 	.header .text-container {
@@ -1949,13 +1976,16 @@ a:hover.back-to-top {
 
 	/* Download */
 	.basic-4 {
-		padding-top: 6.75rem;
+		/* padding-top: 6.75rem; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.basic-4 .text-container {
 		margin-top: 7rem;
 		margin-bottom: 0;
-		text-align: left;
+		text-align: center;
 	}
 	/* end of download */
 
@@ -2115,7 +2145,8 @@ a:hover.back-to-top {
 
 	/* Download */
 	.basic-4 .text-container {
-		margin-top: 11rem;
+		margin-top: 6rem;
+		padding:0 15rem 0 15rem;
 	}
 
 	.basic-4 .image-container {
@@ -2158,3 +2189,7 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
+
+
+
+

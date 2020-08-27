@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Inovatik">
+    <meta name="description" content="Conference JAM">
+    <meta name="author" content="Teodor Mosteanu">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site_name" content="Jam 2020" /> <!-- website name -->
 	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:title" content="JAM 2020"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Journeys Across Media conference" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
 	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
@@ -30,10 +30,12 @@
 	<link href="css/styles.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/black-sea-btn.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-    
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button> 
+
     <!-- Preloader -->
 	<div class="spinner-wrapper">
         <div class="spinner">
@@ -46,8 +48,8 @@
     <!-- Navigation -->
     <!-- navbar class to make it expand on scroll -->
     <nav class="navbar-expand-md navbar-custom fixed-top top-nav-collapse">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+        
+       
 
         <!-- Image Logo -->
         <!-- <a class="navbar-brand logo-image" href="index.html"><img src="" alt="alternative"></a>  -->
@@ -60,6 +62,8 @@
         <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text page-scroll " href="index.html">JAM 2020</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
@@ -67,43 +71,39 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#features" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#features"><span class="item-text">About JAM</span></a>
+                        <a id="about-jam" class="dropdown-item page-scroll" href="#features"><span class="item-text">About JAM</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href=""><span class="item-text">Bios and abstracts</span></a>
+                        <a class="dropdown-item page-scroll" id="schedule" href="#features" ><span class="item-text " >Schedule, Bios and Abstracts</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href=""><span class="item-text">Schedule</span></a>
+                        <a class="dropdown-item page-scroll" href="#host-department"><span class="item-text ">Host Department</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href=""><span class="item-text">FTT Department</span></a>
+                        <a id="register-jam" class="dropdown-item page-scroll" href="#features"><span class="item-text ">Register</span></a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">Creative Content</a>
-                </li>
 
-                <!-- Dropdown Menu -->          
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#features-2" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Creative Content</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <a class="dropdown-item page-scroll" href="#preview"><span class="item-text">Films</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        <a class="dropdown-item page-scroll" id="schedule" href="#posters" ><span class="item-text" >Posters</span></a>
+                        <div class="dropdown-items-divide-hr "></div>
+                        <a class="dropdown-item page-scroll" href="#installation"><span class="item-text ">Online installation</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        
                     </div>
-                </li> -->
-                <!-- end of dropdown menu -->
-
-                <!-- <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                </li> -->
+                </li>
+                
             </ul>
             <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
+                 <span class="fa-stack">
+                    <a target="_blank" href="https://www.instagram.com/filmtheatretelevision/?igshid=5yqyhp6yq6pd&fbclid=IwAR3aMsMZzkdSMBNmO0QoEExdMxpDwTbrmnnfv-8VbELMiPolDvCGPmAwTKs">
                         <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
                     </a>
-                </span>
+                </span> 
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a target="_blank" href="https://twitter.com/journeys_2020">
                         <i class="fas fa-circle fa-stack-2x"></i>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
@@ -121,20 +121,16 @@
                 <div class="header-main">
                     <div class="col-lg-40">
                         <div class="text-container">
-                            <h1 class="jam-text-big">JAM 2020 <br>Journeys Across <span id="js-rotating" ><span class="jam-rotate">Media</span>, Sharing, Stories</span></h1>
+                            <h1 class="jam-text-big">JAM 2020 <br>Journeys Across <span id="js-rotating">Media, Sharing, Stories</span>
+                            </h1>
                             <p class="jam-text">A Virtual Conference on Sharing Stories <br><br> 16 September 2020</p>
-                            <!-- <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>Book your ticket</a> -->
-                            <a class="btn-solid-lg page-scroll" href="https://www.eventbrite.com/e/journeys-across-media-2020-sharing-stories-tickets-97316294657" target="_blank"><i class="fab fa-google-play"></i>Book your ticket</a>
+                            <a class="btn-solid-lg page-scroll" href="https://www.eventbrite.com/e/journeys-across-media-2020-sharing-stories-tickets-97316294657" target="_blank"><i class="fab fa-google-play"></i>Register here</a>
                         </div>
                     </div> <!-- end of col -->
-                    <!-- <div class="col-lg-6">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative"> -->
-                        <!-- </div> end of image-container -->
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
+        <!-- </div> end of header-content -->
     </header> <!-- end of header -->
     <!-- end of header -->
 
@@ -155,13 +151,13 @@
                 <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>About</a>
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="false"><i class="fas fa-info-circle"></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>Schedule</a>
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="true"><i class="far fa-calendar-alt"></i>Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>Book tickets</a>
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>Register here</a>
                     </li>
                 </ul>
                 <!-- end of tabs links -->
@@ -180,12 +176,12 @@
                                 <!-- end of icon cards pane -->
 
                                 <!-- Image Pane -->
-                                <div class="col-lg-4">
+                                <div class="col-lg-11">
                                     <div class="about-conference-main">
                                         <p style='margin-right:0cm;margin-left:0cm;font-size:16px;margin:0cm;line-height:180%;vertical-align:baseline;'><span>The world may have changed but the human need to share stories has not, in fact it has become more important than ever and JAM 2020 seeks to reflect this in its first ever virtual conference. The act of storytelling involves a process of choice making &ndash; we choose the details to include and exclude, we shape narratives depending on who we share our stories with and how. Originally a live event,&nbsp;</span><span>this conference is interested in exploring methods and approaches to sharing stories in theatre, performance, film, television, and literary practice.&nbsp;</span><span>&nbsp;</span></p>
                                         <p style='margin-right:0cm;margin-left:0cm;font-size:16px;margin:0cm;line-height:180%;vertical-align:baseline;'><span>It promises to be an interesting day, packed with varied research. There will be theatre workshops, installations, film essays, posters&nbsp;and discussions&nbsp;on:</span><span>&nbsp;</span></p>
                                         <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",serif;margin:0cm;line-height:180%;vertical-align:baseline;'><span>&nbsp;</span></p>
-                                        <ul style="list-style-type: disc;margin-left:8px;">
+                                        <ul style="list-style-type: disc;margin-left:-81px;">
                                             <li><span>Evolution of the modern sitcom</span><span style="color:black;">&nbsp;</span></li>
                                             <li><span>Visual Representations of Young Saudi Women in Britain</span><span>&nbsp;</span></li>
                                             <li><span>Immersive Storytelling and&nbsp;Postphenomenological&nbsp;Performance</span><span></li>
@@ -220,20 +216,180 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-md-4">
-                               
+                                    <article>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>9.15 am-10 am Welcome&nbsp;</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>The conference convenors will open our online conference space from 9.15 am for you to log on and to test your equipment on Blackboard Collaborate. &nbsp;We will begin our Welcome Talk at approximately 9.50 am&nbsp;</span></em></p>
+                                    </article>
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                    <article>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>10am-10.20am &nbsp;Paper 1</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Pamela Woods. Style: Practice as Research Dissemination&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: &lsquo;After Woodstock: Setting the Record Straight&rsquo;: A Practice as Research Dissemination</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: John Whitney</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-5">Bio and Abstract</a>
+                                    </article>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                    <article>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>10.25-10.45am Paper 2</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Magdalena Mosteanu. Style: Practice Discussion/Micro Workshop</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Theatrical attempt to bridge cultures through food storytelling.&nbsp;</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: John Whitney&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-6">Bio and Abstract</a>
+                                    </article>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                    <article>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>10.50am-11am Paper 3</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Amina Boukheloua. Style: Poster Discussion&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Young Saudi Women in Britain: Context Change and Identity</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Amina Boukheloua&rsquo;s Poster is available from Monday to Friday on our JAM website for you to view in advance.&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: John Whitney</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-7">Bio and Abstract</a>
+                                        <p style='margin-top: 1rem;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>11-11.10 Coffee Break</span></strong></p>
+                                        
+                                    </article>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+                                    
+<!-- second row of schedule -->
+
                                 </div>
                                 <!-- end of image pane -->
                                 
                                 <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
-                                    <h1>Second panel</h1>
-                                </div> <!-- end of col-md-8 -->
-                                <!-- end of text and icon cards area -->
+                    <div class="col-md-4">
+                        <div class="icon-cards-area">
+                                    <div class="card-body">
+                                        <div class="text-wrapper">
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>11.10-11.30 Paper 4</span></strong></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>James Kenward. Style: Video Essay Discussion</span></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Objects in the Films of Abbas Kiarostami</span></em></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>James Kenward&rsquo;s Video Essay will be available Monday to Friday on our JAM website for you to view &nbsp;in advance.&nbsp;</span></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Sarah Byrne</span></p>
+                                            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-8">Bio and Abstract</a>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="icon-cards-area">
+                                
+                                    <div class="card-body">
+                                        <div class="text-wrapper">
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>11.35-11.55 Paper 5</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Nadine Deller. Style: Paper Presentation</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Rethinking Stories of Exclusion: Black Women and Spatiality.&nbsp;</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Sarah Byrne</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-9">Bio and Abstract</a>
+                                    </div>
+                                    </div>
+                                
+                                </div>
 
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
+                                                
+                    <div class="icon-cards-area">
+                        
+                            <div class="card-body">
+                                <div class="text-wrapper">
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>12.00-12.10 Paper 6</span></strong></p>
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Amelia Chisholm. Style: Poster Discussion.&nbsp;</span></p>
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: &ldquo;A Literal Marriage between Cynicism and Optimism&rdquo;: The Evolution of the Modern Sitcom, and Schitt&rsquo;s Creek.</span></em></p>
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Chloe Duane</span></p>
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Amelia Chisholm&rsquo;s Poster will be available Monday to Friday on our JAM website for you to view in advance.</span></p>
+                                    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                    <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-10">Bio and Abstract</a>
+                                    <p style='margin-top:1rem;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>12.10-1.10 &nbsp;Lunch Break</span></strong></p>
+                                </div>
+                            </div>
+                        
+                    </div>
+        </div>
+                        <div class="col-md-4">
+                            <div class="icon-cards-area" style="margin-top:-2rem;">
+                            <!-- <div class="card-body"> -->
+                                <div class="text-wrapper">
+                                    <div class="card-body">
+                                        
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>1.15-1.35 Paper 7</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Louise Radinger Field. Style: Practice as Research Film Discussion&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: A</span></em><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>&nbsp;Woman&rsquo;s Place: the home in cinema</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Chloe Duane.&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Louise Radinger Field&rsquo;s film will be available Monday to Friday on our JAM website for you to view at your leisure in advance.&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-11">Bio and Abstract</a>
+                                        
+                                    </div>
+                                </div>
+                            <!-- </div> -->
+                            </div>
+                        <div class="icon-cards-area" style="margin-top:-2rem;">
+                        <div class="card-body">
+                            <div class="text-wrapper">
+                                    <div class="card-body">
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>1.40-2 &nbsp;Paper 8</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Silvia Macedo. Style: Paper Presentation</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Set design and cityscape, challenges in the art direction&rsquo;s composition.&nbsp;</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Magdalena Mosteanu</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-12">Bio and Abstract</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-cards-area" style="margin-top:-2rem;">
+                        <div class="card-body">
+                            <div class="text-wrapper">
+                                    <div class="card-body">
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>2.05-2.25 Paper 9</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Daniel O&rsquo;Brien. Style: Paper Presentation.&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: Immersive Storytelling and Postphenomenological Performance in Blast Theory&nbsp;</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Magdalena Mosteanu</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-13">Bio and Abstract</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="icon-cards-area" style="margin-top:-3rem;">
+                        <div class="card-body">
+                            <div class="text-wrapper">
+                                    <div class="card-body">
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>2.30-2.50 Paper 10&nbsp;</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>John Whitney. Style: Practice as Research Discussion and Micro Workshop</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><em><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Title: &nbsp;TBC</span></em></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Paper Chair: Magdalena Mosteanu</span></p>
+                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-14">Bio and Abstract</a>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:16px;font-family:"Calibri Light",sans-serif;'>&nbsp;</span></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><strong><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>2.50-3 &nbsp;Conference Wrap Up&nbsp;</span></strong></p>
+                                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-size:16px;line-height:200%;font-family:"Calibri Light",sans-serif;'>Conference Convenors and Alison Butler</span></p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div><!-- end of text and icon cards area -->
+        </div><!-- end of row -->
+</div><!--  end of container -->
+</div><!-- end of tab-pane -->
+</div><!-- end of tab -->
+
 
                     <!-- Tab -->
                     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
@@ -241,7 +397,7 @@
                             <div class="row">
 
                                 <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
+                                <div class="col-lg-12">
                                     <h2>Admission is free but you will need to book a place. </h2>
                                     <a class="btn-solid-lg page-scroll center-btn" target="_blank" href="https://www.eventbrite.com/e/journeys-across-media-2020-sharing-stories-tickets-97316294657"><i class="fab fa-google-play"></i>Book your ticket</a>
                                     <h5 class="center-text">If you have any other questions please email us at:<br><a href="mailto:jamconference2020@gmail.com"> jamconference2020@gmail.com</a></h5>
@@ -268,27 +424,87 @@
     <!-- end of features -->
 
 
+
+
+
+
+
+    <div id="features-2" class="tabs" style="background-color: #262431;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Creative Content</h2>
+                    <div class="p-heading p-large">Watch this space for our invited Speakers creative content. Films, posters and an online installation will be available for you to view from 14 th to 18 th September 2020.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" href="#preview"   aria-selected="true"><i class="fas fa-film"></i>Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" href="#posters" aria-controls="tab-2" aria-selected="false"><i class="far fa-image"></i>Posters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" href="#installation" aria-controls="tab-3" aria-selected="false"><i class="fas fa-hashtag"></i>Online installation</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+
+
+
+
     <!-- Video -->
     <div id="preview" class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Creative space</h2>
-                    <div class="p-heading p-large">Creative content</div>
+                    <h2>Films</h2>
+                    <div class="p-heading p-large">Films will be available to view from 14th September 2020</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
 
                     <!-- Video Preview -->
                     <div class="image-container">
                         <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
+                            <!-- <a class="popup-youtube" href="" data-effect="fadeIn"> -->
+                                <img class="img-fluid" src="images/video-frame.jpg" alt="video screen"> 
                                 <span class="video-play-button">
                                     <span></span>
                                 </span>
                             </a>
+                            <p>Video Essay by James Kenward: Objects in the Films of Abbas Kiarostami</p>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <!-- <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn"> -->
+                                <img class="img-fluid" src="images/video-frame.jpg" alt="video screen"> 
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                            <p>Video Essay by Louise Radinger Field: A Woman’s Place: Home in the Cinema</p>
                         </div> <!-- end of video-wrapper -->
                     </div> <!-- end of image-container -->
                     <!-- end of video preview -->
@@ -299,111 +515,16 @@
     </div> <!-- end of basic-1 -->
     <!-- end of video -->
 
-
-    <!-- Details 1 -->
-    <div id="details" class="basic-2">
+<!-- Slider -->
+    <div class="slider-2" id="posters">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <!-- <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative"> -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Goals Setting</h3>
-                        <!-- <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check out the details</p> -->
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
-                    </div> <!-- end of text-container -->
+                <div class="col-lg-12">
+                    <div class="p-heading p-large"><h2>Posters</h2>
+                        <div class="p-large">Posters will be available to view from 14th September 2020</div>
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details 2 -->
-    <div class="basic-3">
-        <div class="second">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h3>Calendar Input</h3>
-                            <!-- <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease. Just open the feature and start setting up your time as you desire</p> -->
-                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of second -->
-    </div> <!-- end of basic-3 -->    
-    <!-- end of details 2 -->
-
-
-    <!-- Details Lightboxes -->
-	<!-- Lightbox -->
-	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-		<div class="row">
-			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-6">
-				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
-			</div>
-			<div class="col-lg-6">
-				<h3>Goals Setting</h3>
-				<hr>
-                <p>Leno can easily help you track your personal development evolution if you take the time to set it up.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
-			</div>
-		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    
-    <!-- Lightbox -->
-    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-		<div class="row">
-			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-6">
-				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
-			</div>
-			<div class="col-lg-6">
-				<h3>Calendar Input</h3>
-				<hr>
-                <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
-			</div>
-		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of details lightboxes -->
-
-
-    <!-- Screenshots -->
-    <div class="slider-2">
-        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     
@@ -414,80 +535,80 @@
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
                                 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
+                                    <!-- <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn"> -->
+                                        <img class="img-fluid" src="images/soon.jpg" alt="coming soon">
                                     </a>
                                 </div>
                                 <!-- end of slide -->
@@ -510,115 +631,307 @@
     <!-- end of screenshots -->
 
 
+
+
+
+
+
+
+    
+
+
+    <!-- Details 2 -->
+    <div class="basic-3" style="background-color: white;" id="installation">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="text-container" >
+                            <h3 style="color: black;">Easy As Pie</h3>
+                            <p style="color: black;">Online installation by Magdalena Mosteanu</p>
+                            <a class="btn-solid-lg page-scroll" href="https://teodor-mosteanu.github.io/Madzia/index.html" target="_blank"><i class="fab fa-google-play"></i>Visit installation</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-7">
+                        <img class="img-fluid border-round " style="max-width: 100%; "src="images/newhomepage.jpg" alt="Charicature of people taking part">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
+
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				
+			</div>
+			<div class="col-lg-6">
+				<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>DEPARTMENT OF FILM, THEATRE AND TELEVISION carries out research under the University&#39;s Heritage &amp; Creativity Research Theme.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>Our research analyses the languages and conventions of film, theatre and performance, television, and new media. We explore their cultural impact and how they engage with identity and representation, inclusion and social justice, conflict, and migration.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>Our postgraduate research students range from recent graduates just beginning their careers to established industry professionals.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>We host an annual conference, <strong>Journeys Across Media</strong>, which is an opportunity for students to meet and learn about each other&#39;s work. This year&rsquo;s conference is being held as an online event for the very first time in its history.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>We frequently collaborate with other departments at Reading on research projects.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>For example, we partnered with the Department of Politics and International Relations on Disappearing War: Cinema and the Politics of Erasure in the War on Terror.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>We are based in Minghella Studios, which houses a collection of versatile performance spaces and facilities to support staff and postgraduate research practice.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>We also host talks, workshops, residencies and public performances by eminent scholars and practitioners.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'>Within the Department, we have more than 9,000 audiovisual assets for film, theatre and television research.</p>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    
+
+
+    <!-- Lightbox Bio and Abstract-->
+    <!-- Pamela Woods 5) -->
+    <div id="details-lightbox-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-11">
+				<h3>Pamela Woods ( BSC Hons Botany. MA Philosophy, Bristol )</h3>
+				<hr>
+                <p>I am enrolled in a Practice as Research PhD at the University of Bristol Film and Television department. My fundamental interest is in human cognitive change. I run two businesses and have had a career in the creative arts.</p>
+                <h4>Abstract - ‘After Woodstock : Setting the Record Straight’:  A Practice as Research Dissemination </h4>
+                <p>Fifty years ago, in Bethel New York, The Woodstock Festival of Peace and Music marked the acknowledgement of a revolutionary movement for social change. But the spirit of the era is said to have abruptly ended after the 1969 Manson murders. 
+                Despite similar disheartening times, this research asks can we find new narrative forms to re-create an authentic visionary discussion somewhere amidst the ecstatic spectacle of Woodstock and the horrors of Cielo Drive? 
+                This project will gather untold stories of the lived experiences of’60’s radicals. Juxtaposing previously excluded stories with oppositional points of view, I aim to create a textured, haptic documentary film challenging nostalgic notions and reanimating the politics of the time.
+                The era has been commodified to such an extent that we are clouded with layers of false narratives. As a documentary memory of human radicalism, sidestepping celebrity tales, this film can tell a more authentic story. 
+                </p>
+                <p>This cross-disciplinary, practice-based research project draws from philosophy, social history, film theory and film practice. As an artist, designer and philosopher, stepping into the world of film practice requires new learning and creative and academic adaptation. I welcome the opportunity to discuss the film forms emerging from this research project at this conference.</p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- 6) Magdalena Mosteanu  -->
+    <div id="details-lightbox-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-11">
+				<h3>Magdalena Mosteanu</h3>
+				<hr>
+                <p>Magdalena Mosteanu is a theatre practitioner, PhD candidate and Sessional Lecturer at Film Theatre and Television Department, University of Reading, UK. Gained her BA and MA in Acting (Warsaw, 2014) as well as MA in Collaborative Theatre Making (London/Coventry 2017) run in association with Frantic Assembly. Currently investigating in her practise-as-research project frameworks and methodologies of interweaving cultures in theatre.</p>
+                <h4>Abstract - Theatrical attempts to bridge cultures through food storytelling - Easy as Pie online installation. </h4>
+                <p>In an answer to the question of dissemination of research stories, I wish to propose an online installation documenting a series of storytelling workshops ‘Easy as Pie’ which took place in July 2019 at the Museum of English Rural Life in Reading. On one level, this practice-led research explores the interdependence of migration and negotiation of difference. On another level, my practice focused on the food stories as markers of intercultural mediation and probed food stories as signifiers of a common frame of reference within which people can communicate more freely. The workshops aimed to tell, exchange and document stories of foods that reconnect us as a community. Accompanying the online installation I wish to present a paper on the wider context of cultural negotiation in contemporary performance. Following Ric Knowles’ focus on how ‘cultures and cultural forms interact and negotiate their differences through performative exchange’ I wish to ask what are current narratives of the theatre of migration? (2010) By analysing ‘the pioneering international theatre-makers, UK artists and communities exploring global themes’ I hope to position my own practice in the context of the ‘theatrical attempts to bridge cultures through performance’ (Knowles 2010). 
+                </p>
+                <p>Citations: Knowles, R. (2010) Theatre & Interculturalism. Basingstoke: Palgrave MacMillan;The Battersea Arts Centre ‘Going Global 2020’</p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <div id="details-lightbox-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Amina Boukheloua</h3>
+                <hr>
+                <p>Amina Boukheloua, an international second-year PhD student at the University of Leeds, at the School of Sociology and Social Policy. My areas of focus are women identities, women and migration, the identity of women through photography, and the effect of religious and social guidelines on Muslim women. </p>
+                <h4>Abstract - Young Saudi Women in Britain: Context Change and Identity </h4>
+                <p> The use of visual material such as photographs represents a rich and insightful means to get into individuals identities by exploring their journeys and the way they evolve through time. The presented research focuses on women identities and the way a picture can capture their definitions of the components of their identities in different contexts.  It undertakes the case of Saudi women on a transnational migratory movement and the way their identities interact with both the religious and social context differences.  The argument used is that young Saudi women in Britain self-represent and negotiate their identities differently than they do when in their familiar environment. The transnational formation occurring in both spaces (Saudi Arabia and Britain) affects the way these women negotiate their identities in which the negotiation process does not merely apply to one space but rather composes of traits either acquired or developed in both the sending and receiving societies. The research uses the qualitative case study approach implementing auto photography and photo elicitation to conduct both individual and in-depth group interviews. The aim is to explore the unique experiences of Arab Muslim women in self-expressing and negotiating their identities when changing their social-religious contexts through transnational migration. </p>
+                <!-- <p> </p> -->
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+    <div id="details-lightbox-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>James Kenward </h3>
+                <hr>
+                <p>James Kenward is a Postgraduate Researcher and Sessional Lecturer in the Department of Film, Theatre and Television at the University of Reading, England. His research concerns expressions of and approaches to reality in film, particularly in regards to Iranian Cinema. He is currently writing his thesis examining the intersections of politics and realism in the films of Abbas Kiarostami and Jafar Panahi. </p>
+                <h4>Abstract - Objects in the Films of Abbas Kiarostami </h4>
+                <p> The act of looking has featured continuously throughout Abbas Kiarostami’s filmmaking. Often, this has involved characters within his films acting as surrogates, wandering through desolate landscapes in search of meaning. Occasionally, it has even involved Kiarostami himself. Yet what of the objects under their gaze? Almost all might seem incidental – an aeroplane flying above, a bone flowing down a stream, an aerosol can rolling down a street – yet their cumulative effect is to create films brimming with objects. Sometimes, as is the case in Five, these objects take over the entire film, removing all narrative concerns in favour of a narrative built from the incidental – built from the nothingness. Yet it is precisely in this sparseness that Jean-Luc Nancy finds the full mobilisation of Kiarostami’s filmic gaze. In and of themselves, each of these objects might not signify or represent anything. This, however, is exactly the point. Freed of relation or signification, the objects in these films are left to exist for themselves. </p>
+                <p>Presentations of a real world beyond the limits of the film. It is not that these objects tell stories, but that through them the viewer might make their own.  </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+    <div id="details-lightbox-9" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Nadine Deller</h3>
+                <hr>
+                <p>I am first year PhD candidate, based at the Royal Central School of Speech and Drama. My research project, ‘Playing in the Dark’, is a collaboration between the National Theatre and RCSSD, concerned with illuminating the position of black women playwrights in the Black Plays Archive. </p>
+                <h4>Abstract - Rethinking Stories of Exclusion: Black Women and Spatiality </h4>
+                <p> This provocation concerns the exclusion of black women's stories in British theatre, by using ‘space’ as a key point of interrogation. This presentation concerns recent black women's theatre (Chino Odimba, 2019, Janice Okoh, 2020) and ask how spatiality might prove a useful tool for reimagining the socio-political landscape outside of the theatrical space. Recent theatre scholarship has addressed the implications of the historic exclusion of black women's narratives, including close readings of text, interviews and historical analysis (Goodman, 1996, Osborne, 2003, Goddard, 2007, 2015). However, the question of how we might read particular black women’s histories through the lens of spatiality has not been addressed in-depth. This presentation will pose a possible solution to open up how we read and tell women’s histories in theatre. Drawing on Joanne Tompkins’s work on Foucault's heterotopias (2014, 2019) - how spaces on stage connect with social and political realities off stage will be discussed in relation to how black women’s identities are articulated. </p>
+                <p>Can we open up discussions of how ‘space' might enable black women’s stories to be read/told in ways that imagine an alternative to the current social order? </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+    <div id="details-lightbox-10" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Amelia Chisholm</h3>
+                <hr>
+                <p>Amelia Chisholm is currently studying her MA in Film Theory at King’s College London, after which she hopes to continue to a PHD. Her research interests lie in the significance of the sitcom as a form of text, the genre’s history and current trends, and the influence of comedy. </p>
+                <h4>Abstract - “A Literal Marriage between Cynicism and Optimism”: The Evolution of the Modern Sitcom, and Schitt’s Creek. </h4>
+                <p> Michial Farmer ‘s essay on ‘metamodernist sensibilities’ within the modern sitcom correctly identifies a contemporary trend of the genre’s humour moving from that of superiority, towards a “post-sincere, post-ironic approach”. This ‘metamodernist’ sitcom demands a cynical attitude towards characters, but a simultaneous belief in their positive intentions. It is this positivity which is equally noted in David Ehrlich’s article discussing the rise of cinematic ‘nicecore’, in which the protagonist faces a cynical world with a kind and selfless attitude. Both texts discuss the incorporation of both cynicism and sincerity within modern media. This conference proposal aims to explore not solely the accuracy of these claims, with a focus on the sitcom Schitt’s Creek, but to understand how far “we are brought into… idealism as participants”, as Farmer claims. The trend is significant; it demonstrates both a rejection of the sitcom as escapism from social convention, and a forced alliance with the main cast. This creates the potential for audience growth, alongside the protagonists. I believe that this demonstrates both the birth of a new subgenre, and the formation of a new relationship between audience and media.  </p>
+                <p>Bibliography:
+                    Farmer, Michial.  “’Cloaked In, Like, Fifteen Layers of Irony’: The Metamodernist Sensibility of “Parks and Recreation”. Studies in Popular Culture. Vol. 37, No.2. 2015. 103-120. 
+                    Ehrlich, David. “The New Wave of Nicecore: How the Dark Age of Donald Trump Is Inspiring Movies to Choose Kindness over Conflict”. IndieWire. June 15th 2018. Accessed January 21st 2020, https://www.indiewire.com/2018/06/nice-movies-in-age-of-trump-1201974749/ .
+                    Filmography
+                    Schitt’s Creek. Not a Real Company Productions. 2015-2020. 
+                     </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <div id="details-lightbox-11" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Louise Radinger Field </h3>
+                <hr>
+                <p>Louise Radinger Field is currently studying for a practice-led PhD in the Department of Film,
+                    Theatre & Television at the University of Reading. Her thesis investigates the mutual
+                    relationship between architecture and cinema, focusing on the figure of a woman in a house.
+                    She has worked in film, theatre and puppetry. Most recently her shadow puppetry and live
+                    action drama Madeleine on Tiptoe was selected for the Little Angel Theatre’s SUSPENSE
+                    festival for adult puppetry at the Pleasance Theatre, and she directed three operas for
+                    Highbury Opera Theatre at the Union Chapel. She holds two film festival awards for short
+                    films. She has a BA in Drama from Manchester University, a Diploma in Film and Television
+                    from Bristol University and an MA in Film: Culture and Industry from the University of
+                    Westminster.
+                     </p>
+                <h4>Abstract - A Woman’s Place: Home in the Cinema </h4>
+                <p> An exploration of emotional architecture in cinema, focusing on the figure of a woman in a
+                    house. Sounds and images from films made between 1936 and 2013 are woven together into
+                    a cinematic triptych spread laterally upon three screens, enabling translations, comparisons,
+                    resonances and vibrations between films to emerge. (Duration 20 minutes)
+                     </p>
+                <p> </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+    <div id="details-lightbox-12" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Silvia Macedo </h3>
+                <hr>
+                <p>Silvia Macedo is a Brazilian architect, production designer, and film producer with master's in urban theory. Currently, she is finishing a PhD in Film studies under the guidance of Professors Lucia Nagib and John Gibbs. The focus of her research is the visual identity of Northeast Brazil (re)created from the mid-1990s within the revival of Brazilian Cinema on the light of production design work. </p>
+                <h4>Abstract - Set design and cityscape, challenges in the art direction’s composition </h4>
+                <p>This paper will consider the representation of urban life in the film Amor, Plastico e Barulho (Love, Plastic and Noise, Renata Pinheiro, 2013). It will address the socioeconomic and cultural structure of the city of Recife – Northeast Brazil and the use of urban space and real locations as an identity element through the production design analysis. The film revolves around the lives of residents of a favela who aspire to success in the popular music business. The focus of the narrative is the conflicts caused by the ephemerality of artistic success, by the disposable character of things and people in a big city. The urban transformation linked to the economic growth at the beginning of the 21st century is revealed in the film through representations of a city that is verticalized with massive and increasing construction.  </p>
+                <p>The film works on two aesthetic principles: the first is a documentary style, presenting the physical and social space of Recife; the second is that of a constructed visual composition and a peculiar mise-en-scène. This visual foundation base structured by the production design is strengthened by a camera that circulates freely around the set, without the limitations of a scenographic space made in studios. </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+    <div id="details-lightbox-13" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3>Daniel O’Brien </h3>
+                <hr>
+                <p>Daniel O’Brien is a lecturer in Film and Digital Media at the University of Essex. He has a PhD in Film and Television Studies from the University of Glasgow and an MA in Film and Screen Cultures from Goldsmiths, University of London. His areas of research span across Film Studies, Interactive Media Art and Computer Gaming.  </p>
+                <h4>Abstract - Immersive Storytelling and Postphenomenological Performance in Blast Theory </h4>
+                <p>Immersive storytelling across theatre, film and television is increasingly becoming a co-evolutionary practice between the artist and audience. From Punchdrunk Theatre company to Blast Theory, audiences are becoming actively involved in the unfolding of narrative through digital devices that negotiate with a user’s physical presence. Embodiment, as Don Ihde argues, is crucial to a specific type of postphenomenological experiencing through a fusion of the body and a technological device. 
+                    This paper adopts Ihde to consider the role of the postphenomenological performer by discussing the trajectory of immersive story worlds. It considers two distinct early interactive artworks. Blast Theory’s A Machine to See With (2010)  and Karen (2015) are two unique fictional pervasive games that enable users, through the technology of their mobile phone, to become immersed within a story world. Each artwork experience approaches the immersion differently, the former taking over an intense hour uses the physicality of the user and technological GPS properties to offer a type of locative cinema. The latter  enables a different type of pervasive immersion through interstitial storytelling over a two-week period, incorporating the user’s smartphone into a virtual narrative space that pertains to a type of virtual socializing. Each artwork is considered through Ihde’s philosophy of technology that changes story readers into postphenomenological performers. 
+                      </p>
+                <p> </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <div id="details-lightbox-14" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-11">
+                <h3></h3>
+                <hr>
+                <p> </p>
+                <h4> </h4>
+                <p>  </p>
+                <p> </p>
+                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+
+
+
+
+    <!-- Screenshots -->
+    
+
+
     <!-- Download -->
-    <div class="basic-4">
+    <div class="basic-4" id="host-department"> 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-5">
+                <div class="col-lg-12">
                     <div class="text-container">
-                        <!-- <h2>Download <span class="blue">Leno</span></h2> -->
-                        <!-- <p class="p-large">Target the right customers for your business with the help of Leno's patented technology and increase conversion figures in less than 2 weeks</p> -->
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
-                    </div> <!-- end of text-container -->
+                        <h2>Host Department </h2> 
+                        <p class="p-large"><p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>&nbsp;</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>&nbsp;</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>DEPARTMENT OF FILM, THEATRE AND TELEVISION carries out research under the University&#39;s Heritage &amp; Creativity Research Theme.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>Our research analyses the languages and conventions of film, theatre and performance, television, and new media. We explore their cultural impact and how they engage with identity and representation, inclusion and social justice, conflict, and migration.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>Our postgraduate research students range from recent graduates just beginning their careers to established industry professionals.&nbsp;</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>We host an annual conference, <strong>Journeys Across Media</strong>, which is an opportunity for students to meet and learn about each other&#39;s work. This year&rsquo;s conference is being held as an online event for the very first time in its history.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>We frequently collaborate with other departments at Reading on research projects.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>For example, we partnered with the Department of Politics and International Relations on Disappearing War: Cinema and the Politics of Erasure in the War on Terror.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>We are based in Minghella Studios, which houses a collection of versatile performance spaces and facilities to support staff and postgraduate research practice.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>We also host talks, workshops, residencies and public performances by eminent scholars and practitioners.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>Within the Department, we have more than 9,000 audiovisual assets for film, theatre and television research.</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>To find out more about the FTT Department, please visit&nbsp;</span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style="color:white;"><a href="https://www.reading.ac.uk/film-theatre-television/"><span style='font-family:"Calibri Light",sans-serif;color:white;'>https://www.reading.ac.uk/film-theatre-television/</span></a></span></p>
+                        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:15px;font-family:"Calibri",sans-serif;text-align:justify;'><span style='font-family:"Calibri Light",sans-serif;color:white;'>&nbsp;</span></p></p>
+                        <!-- <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
+                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a> -->
+                  </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/download.png" alt="alternative">
-                    </div> <!-- end of img-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
+    </div>  <!-- end of container -->
+     <!-- end of basic-4 -->
     <!-- end of download -->
 
-
-    <!-- Statistics -->
-    <div class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Counter -->
-                    <!-- <div id="counter">
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="231">1</div>
-                            <p class="counter-info">Happy Users</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="85">1</div>
-                            <p class="counter-info">Issues Solved</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="59">1</div>
-                            <p class="counter-info">Good Reviews</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="127">1</div>
-                            <p class="counter-info">Case Studies</p>
-                        </div>
-                    </div> -->
-                    <!-- end of counter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of statistics -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>CONTACT</h2>
-                    <!-- <ul class="list-unstyled li-space-lg">
-                        <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
-                        <li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">office@leno.com</a></li>
-                    </ul> -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form -->
-    <!-- end of contact -->
 
 
     <!-- Footer -->
@@ -627,8 +940,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <!-- <h4>About Leno</h4> -->
-                        <!-- <p>We're passionate about creating the best mobile apps for personal development</p> -->
+                        <h4>About JAM 2020</h4>
+                        <p>A virtual research conference on sharing stories.</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -637,11 +950,11 @@
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <!-- <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div> -->
+                                <div class="media-body">Our partner: <a target="_blank" class="turquoise" href="http://www.reading.ac.uk/">University of Reading</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <!-- <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div> -->
+                                <div class="media-body">Visit us on <a target="_blank" class="turquoise" href="https://www.reading.ac.uk/film-theatre-television/">FTT</a></div>
                             </li>
                         </ul>
                     </div>
@@ -649,36 +962,21 @@
                 <div class="col-md-4">
                     <div class="footer-col last">
                         <h4>Social Media</h4>
+                        
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://twitter.com/journeys_2020">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
+                       
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
+                            <a href="https://www.instagram.com/filmtheatretelevision/?igshid=5yqyhp6yq6pd&fbclid=IwAR3aMsMZzkdSMBNmO0QoEExdMxpDwTbrmnnfv-8VbELMiPolDvCGPmAwTKs">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
+                        
                     </div> 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -692,7 +990,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p> -->
+                    <p class="p-small">Developed by  <a href="https://teodor-mosteanu.github.io/Site/">Teodor Mosteanu</a></p>
+                    <p class="p-small">Template Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
