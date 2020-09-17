@@ -1,0 +1,27 @@
+.swiper-container2 {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    margin-left: -300px;
+  }
+
+  .swiper-slide {
+     background-position: center;
+      background-size: 90% 100%;  
+     /* background-size: 550px 480px; */
+     background-repeat: no-repeat;
+  }
+
+  .visible {
+      opacity: 3;
+      transition: 8s opacity;
+  }
+
+  .visible.fade {
+    opacity: 0;
+    transition: none;
+
+  }
+  
