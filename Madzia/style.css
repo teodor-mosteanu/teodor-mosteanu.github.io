@@ -8,14 +8,18 @@
     left: 70%;
     top: 50%;
 }
-
-
-
+:root{
+  --mobile-scale-adjust: 1.4;
+  --mobile-scale-adjust2: 1.6;
+}
 .abc {
   font-weight: 900;
 }
 
-
+.highlight {
+  font-family:"Calibri",sans-serif;'
+  font-style: italic !important;
+}
 
 html, body {
     position: relative;
@@ -33,7 +37,6 @@ html, body {
     opacity: 3;
     transition: 8s opacity;
   }
-  
   body.fade {
       opacity: 0;
       transition: none;
@@ -123,7 +126,7 @@ html, body {
   cursor: pointer;
   pointer-events: none;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 .welcome-page {
@@ -194,6 +197,14 @@ article {
 .mag-photo {
   width: 45%;
   height: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mag-photo2 {
+  width: 20%;
+  height: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -448,9 +459,9 @@ and (orientation: landscape) {
 .swiper-button-prev {
   color:black !important;
 }
- .buttons-menu {
+ /* .buttons-menu {
   margin-left: 40%;
-} 
+}  */
 /* iphone x */
 /* for mobile in portrait */
 
@@ -529,7 +540,7 @@ and (orientation: portrait) {
   @media  screen and  (max-device-width: 736px)  {
  
     .text-information {
-      padding: 2% 20% 0 20%;
+      padding: 2% 8% 0 8%;
     }
  /* main page */
 
@@ -559,6 +570,15 @@ and (orientation: portrait) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.swiper-container2 {
+  width: 69% !important;
+    height: 34% !important;
+    position: absolute;
+    left: 86% !important;
+    top: 45% !important;
+    margin-left: -300px;
 }
  
     /* Guide page */
@@ -622,6 +642,8 @@ and (orientation: portrait) {
     height: 45%;
     margin-top: -30%;
     margin-left: 0;
+    transform:scale(var(--mobile-scale-adjust))
+    /* transform:scale(2) */
   } 
   .cherry-main {
     z-index: 999;
@@ -654,6 +676,7 @@ and (orientation: portrait) {
     height: 45%;
     margin-top: -22%;
     margin-left: 0;
+    transform:scale(var(--mobile-scale-adjust))
   }
   
   .tea-main {
@@ -688,6 +711,7 @@ and (orientation: portrait) {
   height: 45%;
   margin-top: -15%;
   margin-left: 0;
+  transform:scale(var(--mobile-scale-adjust2))
   
 }
 
@@ -725,6 +749,7 @@ and (orientation: portrait) {
   margin-left: 0;
   transform: scale(1.5);
   transform: rotate(90deg);
+  transform:scale(var(--mobile-scale-adjust2))
 }
 
 .chicken-main {
@@ -780,6 +805,15 @@ and (-webkit-min-device-pixel-ratio: 2)
  
 and (orientation: landscape) {
  
+  .swiper-container2 {
+    width: 57%!important;
+    height: 64%!important;
+    position: absolute;
+    left: 59% !important;
+    top: 22% !important;
+    margin-left: -300px;
+    z-index: -5;
+  }
   /* Styles */
 
   .images-points {
@@ -971,6 +1005,14 @@ and (orientation: landscape) {
   margin-top: 48%;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
+}
+.swiper-container2 {
+  width: 50% !important;
+  height: 19% !important;
+  position: absolute;
+  left: 99% !important;
+  top: 29% !important;
+  margin-left: -300px;
 }
     }
 
@@ -1194,8 +1236,145 @@ transform: scale(1.8);
   }
 /* Desktop */
 
-/* @media only screen  and (min-width : 1224px) {
-  /* Styles */
-  
+@media only screen  and (min-width : 1920px) {
+  .images-points {
+    transform: scale(1.5);
+  }
+  .scl {
+    transform: scale(1.5);
+  }
+  .swiper-container2 {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 22% !important;
+    top: 15%;
+    margin-left: -300px;
+  }
+/* cherry pickers */
 
+.welcoming-cherry {
+  
+  width: 45%;
+  height: 45%;
+  margin-top: 0%;
+  margin-left: -30%;
+  transform: scale(1.1);
+}
+.cherry-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.audio-cherry {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: scale(1.5);
+}
+
+.audio-cherry-intro {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: scale(1.5);
+}
+
+
+
+/* tea maker */
+
+
+.tea-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.audio-tea {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: scale(1.5);
+}
+
+.audio-tea-intro {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  transform: scale(1.5);
+}
+
+/*A taste from my hand */
+
+
+.taste-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 55%;
+  left: 41%;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.audio-taste {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: scale(2);
+}
+
+.audio-taste-intro {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: scale(2);
+}
+
+/*Mama Chicken */
+
+.welcoming-chicken {
+  width: 50%;
+  height: 50%;
+  margin-top: -8%;
+  margin-left: -5%;
+  transform: rotate(360deg);
+  transform: scale(1.9);
+}
+
+.chicken-main {
+  z-index: 999;
+  color: #000;
+  position: absolute;
+  top: 58%;
+  left: 47%;
+  font-weight: 900;
+  font-size: 7rem;
+}
+
+.audio-chicken {
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  transform: scale(2);
+}
+
+.audio-chicken-intro {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: scale(2);
+}
+
+}
 

@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Easy as Pie</title>
+    <meta property="og:title" content="Easy as Pie">
+    <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
+    <meta property="og:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+    <meta property="og:url" content="http://easyaspiethetre.co.uk">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="easyaspietheatre.co.uk">
+    <meta name="twitter:title" content="Easy as Pie Theatre installation">
+    <meta name="twitter:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+    <meta name="twitter:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
+
     <link rel="icon" type="image/png" href="./images/favicon2.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
@@ -14,69 +26,68 @@
   <link rel="stylesheet" href="bootstrap.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/bf96ff4f96.js" crossorigin="anonymous"></script>
 </head>
 <body >
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: x-large;">
-        <a class="navbar-brand" href="./index.html"><span class="abc">Easy as Pie</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-    <div class="buttons-menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mr-auto" href="./index.html">Easy as Pie</a>
 
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>				
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html"><span class="abc">Home</span> <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Stories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./story.html">Guide</a>
+                <a class="dropdown-item" href="./story.html#slide2">The Cherry Pickers</a>
+
+                <a class="dropdown-item" href="./story.html#slide3">The Tea Maker</a>
+
+                <a class="dropdown-item" href="./story.html#slide4">A taste from my hand</a>
+
+                <a class="dropdown-item" href="./story.html#slide5">Mama Chicken</a>
+
+                
+              </div>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="abc">Stories</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                    <a class="dropdown-item" href="./story.html"><span class="abc">Guide</span></a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./about.html#documentation">Documentation Gallery</a>
 
-                    <a class="dropdown-item" href="./story.html#slide2"><span class="abc">The Cherry Pickers</span></a>
+                <a class="dropdown-item" href="./about.html#research">Research</a>
 
-                  <a class="dropdown-item" href="./story.html#slide3"><span class="abc">The Tea Maker</span></a>
+                <a class="dropdown-item" href="./about.html#methodology">Creative Writing</a>
 
-                  <a class="dropdown-item" href="./story.html#slide4"><span class="abc">A Taste From my Hand</span></a>
-
-                  <a class="dropdown-item" href="./story.html#slide5"><span class="abc">Mama Chicken</span></a>
-
-                    
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./story.html#slide6"><span class="abc">Credits</span></a>
-                </div>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="abc">About</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                      <a class="dropdown-item" href="./about.html#documentation"><span class="abc">Documentation Gallery</span></a>
-    
-                      <a class="dropdown-item" href="./about.html#research"><span class="abc">Research</span></a>
-    
-                      <a class="dropdown-item" href="./about.html#methodology"><span class="abc">Methodology</span></a>
-    
-                      <a class="dropdown-item" href="./about.html#collaborators"><span class="abc">Collaborators</span></a>
-                      
-                      <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../about.html#collaborators">Collaborators</a>
+                <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="./about.html#contact"><span class="abc">Contact</span></a>
-                    </div>
-
-            
-            
-              <li class="nav-item active">
-                <a class="nav-link" href="./share.html"><span class="abc">Share your storry</span> <span class="sr-only">(current)</span></a>
-              </li>
+              </div>
             </li>
-
-        </div>   
+            <li class="nav-item active">
+              <a class="nav-link" href="./share.html">Share your story <span class="sr-only">(current)</span></a>
+            </li>
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/easyaspiestorytelling" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/MagdalenaSzczy" target="_blank"><span class="fa fa-twitter"></span></a></li>
+              <li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/mosteanu.researcher/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+          </ul>
         </div>
       </nav>
 <main class="main-about">
@@ -94,50 +105,50 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                           <img src="./images/find out about our methodlogy.jfif" alt="" class="tom-gallery">
+                           <img src="./images/find out about our methodlogy.jfif" alt="Drawing" class="tom-gallery">
                         </div>
                         </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/find out who we are or listen to the stories.jfif" alt="" class="tom-gallery">
+                        <img src="./images/find out who we are or listen to the stories.jfif" alt="Drawing of people discussing" class="tom-gallery">
                     </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/listen to our stories or methodology.jfif" alt="" class="tom-gallery">
+                        <img src="./images/listen to our stories or methodology.jfif" alt="Drawing of people discussing" class="tom-gallery">
                     </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/listen to our stories or welcome page.jfif" alt="" class="tom-gallery">
+                        <img src="./images/listen to our stories or welcome page.jfif" alt="Drawing of people discussing" class="tom-gallery">
                     </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/methodology and mag.jfif" alt="" class="tom-gallery">
+                        <img src="./images/methodology and mag.jfif" alt="Drawing of a woman thinking" class="tom-gallery">
                     </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/participants plus process.jfif" alt="" class="tom-gallery">
+                        <img src="./images/participants plus process.jfif" alt="Drawing of people discussing" class="tom-gallery">
                     </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/potential intro or outro or methodlogy.jfif" alt="" class="tom-gallery">
+                        <img src="./images/potential intro or outro or methodlogy.jfif" alt="Drawing of people discussing" class="tom-gallery">
                     </div>
                 </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/potential intro outro or methodology plus mag.jfif" alt="" class="tom-gallery"></div>
+                        <img src="./images/potential intro outro or methodology plus mag.jfif" alt="Drawing of people discussing" class="tom-gallery"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/process discussion and Jack.jfif" alt="" class="tom-gallery"></div>
+                        <img src="./images/process discussion and Jack.jfif" alt="Drawing of a man playing on guitar" class="tom-gallery"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper-zoom-container" data-swiper-zoom="2">
-                        <img src="./images/writing working on stories Lauren.jfif" alt="" class="tom-gallery"></div>
+                        <img src="./images/writing working on stories Lauren.jfif" alt="Drawing of people discussing and writing" class="tom-gallery"></div>
                     </div>
                 </div>
             
@@ -156,24 +167,33 @@
             Research
         </h2>
         <article class="text-information">
-            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Easy As Pie is a research project posing questions of food and food storytelling as mediators for cross-cultural contact and communication. By employing theatrical approaches and methods, three creative workshops were designed and took place in July 2019 at the Museum of English Rural Life in Reading.</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>The aim of the project was to engage the participants (Reading community members) in devising and sharing stories related to food and migration whilst introducing in the creative process the MERL&rsquo;s collections and facilities. As a result, participants explored the museum&rsquo;s exhibition as well as the herbal garden and an original kitchen space of the building and draw inspiration from the spatial setting, sounds and objects of the museum. Some of the stories written by participants were then shared in the studio, herbal garden and some in the shepherds hut &ndash; each places carefully chosen by participants in collaboration with facilitators in order to enhance the storytelling.&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>As part of the workshop, participants were introduced and lead through the psycho-physical warm-up practices of theatre-making such as breathing techniques, mindfulness and movement exercises. With a help from the creative team free-writing tasks were practiced and ideas for storylines generated. Musician Jack Webb provided musical score for the stories as well as the background music for the devising exercises that took place in the Studio.</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>The outcome of the workshops is presented here, on this website &ndash; an online installation, where the audio-recorded stories of participants from Algeria, Romania, Ukraine and England are made available to our audience.&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>We invite the audience to engage with the artwork documentation of the workshops created by Tom Pearce. Tom has attended one of the Easy as Pie workshops and documented the day in drawings which is displayed along with the audio narratives and in the Documentation Gallery.&nbsp;</span></p>
-<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Easy As Pie Storytelling is dedicated to a wider audience of those who have experienced migration directly or indirectly. Through the sharing of stories, community members are given the voice and offer an invaluable insight into a complex experience of migration, searching for one&rsquo;s home and belonging. The Easy As Pie storytelling installation is key to reach out to our audiences and migrant communities in UK and beyond. The website is also offering transparency of the research methodology for the academic audience who is interested in theatre and migration studies.</span></p>
+            <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Easy As Pie</strong> is a research project posing the question of <strong>food storytelling</strong> as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, <strong>Easy as Pie</strong> project seeks to uncover another function of food storytelling: cross-cultural communication. Since exchanges between different cultures and international contact are central to our understanding of the world, the innovative, creative approaches are key to facilitate cross-cultural dialogue. Indeed, as observed by Finch and Nynas, &lsquo;a recognizable intercultural challenge is experienced today by people in different situations and contexts&rsquo; (2011:1). The situations and contexts they refer to are namely the cross-cultural contacts caused by the migration and the increasing mobility (or, most recently the very opposite of that, due to the global pandemic), the international labour market, the new technologies. The &lsquo;difficult clashes&rsquo; and &lsquo;unfortunate misunderstandings&rsquo; are a common side effect of such increased intercultural contact (Finch and Nynas 2011).</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The Easy as Pie project placed at the intersection of theatre and performance studies, the practice of storytelling and the digital medium strives to achieve an understanding of <strong>cross-cultural contact</strong> and perhaps offers a practical approach to cross-cultural communication.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>Food storytelling is only one of the myriad of ways to approach the issue of cross-cultural contact, but one which signifies a potential common frame of reference within which people may communicate openly.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'><strong>Knowing-doing&nbsp;</strong>is a key approach to Easy as Pie project, &nbsp; foregrounding &lsquo;knowledge which is a matter of doing and placing practice at the heart of the inquiry&rsquo; (Nelson 2013). Knowing-doing is governed by the Heideggerian observation on humans engagement with the <strong>environment</strong> through a practical encounter. Daniel Johnston&rsquo;s reading of Heidegger is helpful here:</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'><span class="highlight" style="font-style: italic;">The conclusion is that we humans primarily encounter the environment through practical engagement. The manner of engagement also needs to be uncovered. Descriptive phenomenology needs to take into account both the historical understanding of Being and the active apprehension of Being within the context of the practical world&nbsp;</span>(Johnston 2017:49).</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>Easy as Pie, initially as a theatre storytelling workshop, sought to offer such an opportunity for a practical encounter and historical understanding. Therefore, by employing theatrical methods, three creative workshops were designed and took place in July 2019 at the Museum of English Rural Life in Reading, asking the following question:</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>Does food storytelling have the capacity for creating innovative channels of cross-cultural communication?</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The workshops aimed <strong>to engage</strong> the participants (Reading community) in devising and sharing their stories related to food and migration whilst introducing in the creative process the MERL&rsquo;s collections. As a result, participants explored the museum&rsquo;s exhibition as well as the herbal garden and original kitchen space of the building and drew inspiration from the spatial setting, sounds and objects of the <strong>museum</strong>. At the start of the workshop, a group of participants was instructed to go on an individual trip around the museum and gardens whilst making notes about the places, objects and sounds that appealed to them. This <strong>subjective observation</strong> served as a starting point for devising the autobiographical stories and proved productive, in fact, one of the participants answered a question from a feedback form: &lsquo;What was the most interesting part of the workshop?&rsquo;</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;text-indent:36.0pt;'><span class="highlight" style="font-style: italic;">Having Everyone&rsquo;s stories pulled from memories triggered by objects in the museum.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>Some of the stories, inspired by the museum and crafted by the participants were then shared (performed) in the Studio, Herbal Garden and some in the Shepherds Hut &ndash; each site was carefully chosen by participants in collaboration with facilitators to enhance the storytelling. &nbsp;</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>As part of the workshop, participants were introduced and lead through the psycho-physical warm-up practices of theatre-making such as deep breathing, mindfulness, Michael Chekhov&#39;s open-hearted contact, and Frantic Assembly&rsquo;s movement exercises. Drawing insights from these practices, the <strong>phenomenological research</strong> emerged as a result of careful investigation of the phenomena of food storytelling. In the practical exercises set by the company, the participants were encouraged</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'><span class="highlight" style="font-style: italic;">to step out of the natural attitude or immediate Care structure of their regular involvement with the world. They began to encounter aspects of the experience differently by paying attention to how they present themselves to their conscious experience&nbsp;</span>(Johnston 2017:54).</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The process of phenomenological research was reflected in the practice of <strong>mindfulness</strong> introduced during the workshops: a mindful walk in the museum, mindful observation of the objects, and a mindful return to one&rsquo;s <strong>body and breath</strong>.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>A distinctly phenomenological flavour have dominated the project and the outcomes of the workshops as presented here, on this website, are a compilation of the perspectives on the phenomena of food storytelling as seen from the multiple perspectives. Namely, the participants&rsquo;, musician&rsquo;s (Jack Webb), illustrator&rsquo;s (Tom Pearce), playwright&rsquo;s (Lauren Morley) and practitioner-researcher&rsquo;s (Magdalena Mosteanu) points of view.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The stories you can listen to, on the Ease as Pie platform, are told by the participants, who come from Algeria, Romania, Ukraine and England. The <strong>soundscape</strong> for each story was composed with careful consideration for creating a parallel world to the one that was written. A day of the workshop was documented in <strong>drawings</strong> and notes, offering an insight into the intimate process of sharing stories.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>Easy As Pie storytelling is dedicated to a wider audience of those who have experienced <strong>migration&nbsp;</strong>directly or indirectly. Through the sharing of stories, community members are given the voice and offer an invaluable insight into a complex experience of migration and intercultural contact. The audience, who is invited to and guided through the act of active listening, engages with the enriching perspectives embedded in each story. Such engagement aims at bridging the gap between the teller and the listener. As Tom Maguire puts it:</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:36.0pt;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'><span class="highlight" style="font-style: italic;">It [the storytelling] allows the teller to establish social relations with others within which the identities, both of the teller and the listener, are constituted in relation to each other through the act of telling. Autobiography thereby forms and interface between individuals and, where it represents individual experience to multiple others, creates a bridge between the private and the public&nbsp;</span>(Maguire 2015:59).</p>
         </article>
     </section>
 
 <section id="methodology">
     <h2 class="head" style="font-weight: 900">
-        Methodology
+        Creative writing
     </h2>
     <article class="text-information">
-        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><strong><span style='font-family:"Lato",sans-serif;'>Creative writing by Lauren Morley</span></strong></p>
-        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>The objective of writing exercises was to get participants engaged with their senses, guiding them through a broad brainstorming of memories that would eventually become a single, complete story. The timing of these exercises was participant-led; I had a rough guideline of how much time should be allotted to each exercise, but if participants needed more or less time, it would be accommodated.</span></p>
-        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>The participants were asked to brainstorm, rapidly, 5 things that came to mind when thinking of home for each of the 5 senses. They were then asked to choose one idea that jumped out to them for each sense. <br> <br> Next, the participants were asked to brainstorm ten family legends --stories from home that are told around the dinner table, these anecdotes that get passed on and told to friends and partners and younger family members. <br> <br> In the discussion, we began to connect these legends to food. Did many of them involve food? Did they not? What was the significance if so?<br> <br> We then moved on to brainstorming what I like to call &quot;Ratatouille&quot; moments --tasting a food that brings you immediately into a memory, like when the curmudgeonly critic Anton Ego is transported to his childhood by a taste of Confit Biyaldi in the film Ratatouille. We discussed crossover between any of these moments and any food-related family legends. <br> <br> The purpose of these warmup exercises was to connect sense memory with story. At this point I gave the participants ten minutes to choose one of their family legends to write out in long form. Some of them had been discussed around the table beforehand. Participants were encouraged to share their stories, and we helped identify a beginning, a middle and an end. <br> <br>&nbsp;The stories were then ready for dramatisation and dramaturgy. For my part, I encouraged participants to find the structure they wanted for their story. I asked where the conflicts were, who else was involved? What did things look like? Smell like? Sound like? When people they know tell the story, what do they focus on? Again, this process was participant-led, as I wanted to encourage the participants to find the story that they wanted to tell, and find the words that best suited what they wanted to express.</span></p>
-        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>&nbsp;</span></p>
+        <p style='margin-top:0cm;margin-right:0cm;margin-bottom:10.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The objective of writing exercises was to get participants engaged with their senses, guiding them through a broad brainstorming of memories that would eventually become a single, complete story. The timing of these exercises was participant-led; I had a rough guideline of how much time should be allotted to each exercise, but if participants needed more or less time, it would be accommodated.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:200%;font-size:15px;font-family:"Calibri",sans-serif;'>The participants were asked to brainstorm, rapidly, 5 things that came to mind when thinking of home for each of the 5 senses. They were then asked to choose one idea that jumped out to them for each sense.<br><br>Next, the participants were asked to brainstorm ten family legends --stories from home that are told around the dinner table, these anecdotes that get passed on and told to friends and partners and younger family members.<br><br>In the discussion, we began to connect these legends to food. Did many of them involve food? Did they not? What was the significance if so?<br><br>We then moved on to brainstorming what I like to call &quot;Ratatouille&quot; moments --tasting a food that brings you immediately into a memory, like when the curmudgeonly critic Anton Ego is transported to his childhood by a taste of Confit Biyaldi in the film Ratatouille. We discussed crossover between any of these moments and any food-related family legends.<br><br>The purpose of these warmup exercises was to connect sense memory with story. At this point I gave the participants ten minutes to choose one of their family legends to write out in long form. Some of them had been discussed around the table beforehand. Participants were encouraged to share their stories, and we helped identify a beginning, a middle and an end.<br><br>&nbsp;The stories were then ready for dramatisation and dramaturgy. For my part, I encouraged participants to find the structure they wanted for their story. I asked where the conflicts were, who else was involved? What did things look like? Smell like? Sound like? When people they know tell the story, what do they focus on? Again, this process was participant-led, as I wanted to encourage the participants to find the story that they wanted to tell, and find the words that best suited what they wanted to express.</p>
     </article>
 </section>
 </h1>
@@ -184,7 +204,7 @@
     <article class="text-information">
         <figure>
             
-        <img src="./images/mag.jpg" alt="" class="mag-photo">
+        <img src="./images/mag.jpg" alt="Drawing portrait of a Mag Mosteanu" class="mag-photo">
         <figcaption class="caption-mag"><span class="abc">Magdalena Mosteanu</span></figcaption>
     </figure>
     <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>PhD researcher at the University of Reading, theatre-practitioner and a mother to Easy as Pie.</span></p>
@@ -194,7 +214,7 @@
     <article class="text-information">
         <figure>
             
-            <img src="./images/lauren.jpg" alt="" class="mag-photo">
+            <img src="./images/lauren.jpg" alt="Drawing portrait of a Lauren Morley" class="mag-photo">
             <figcaption class="caption-mag"><span class="abc">Lauren Morley</span></figcaption>
         </figure>
         <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Writer. Finnish-Canadian. Proud EU citizen. Immigrant.<br> <br> Born in Ottawa, Canada in 1991, I crossed the Atlantic and moved to London in 2014 to take my place in that year&rsquo;s cohort at The Screen Arts Institute&rsquo;s Storytelling for the Screen Programme.<br> <br> In the midst of this whirlwind year of screenwriting and pitching, I maintained my long-held roots in the world of theatre by taking over as Head of the Goodenough Drama Society at Goodenough College. Here I directed and performed in plays, ran writing and improv masterclasses, and arranged for college members to attend great theatre performances all across London.<br> <br> Prior to moving to London, I spent 23 years in Ottawa involved in the theatre and performance community there. I hold an Honours BA from the University of Ottawa in Communication, Theatre and Film studies, and have performed at Canada&rsquo;s National Arts Centre with Opera Lyra and the Ottawa Children&rsquo;s Choir, the University of Ottawa&rsquo;s Academic Hall, and the Youth InFringement Festival.<br> <br> I am a grateful graduate of the Arts Canterbury Literary Arts Programme one of Canada&rsquo;s top secondary schools for the arts. This programme was the foundation of my skills as a writer, allowed me to apply my writing across many artistic disciplines, and fed my hunger for a close-knit and collaborative group that works every day to help each other be the best that they can be.<br> <br> Most recently, I was a member of the 2017-2018 the Soho Writers Alumni Group after completing a year with the Soho Theatre Young Company Writer&rsquo;s Lab in 2016-17. The play which resulted from that year, Hope and Her Children, was longlisted for the Verity Bargate Award.<br> <br> Credits include: <br>&nbsp;The Collab (Scheduled run at The Space for Jan. 2021; Rehearsed reading, Arcola Theatre Nov. 2019) Romiette &amp; Julio (Rehearsed reading, Lion &amp; Unicorn, Jul. 2018)</span></p>
@@ -202,7 +222,7 @@
 </section>
 <article class="text-information">
     <figure>
-        <img src="./images/jack.jpg" alt="" class="mag-photo">
+        <img src="./images/jack.jpg" alt="Drawing portrait of Jack Webb" class="mag-photo">
         <figcaption class="caption-mag"><span class="abc">Jack Webb</span></figcaption>
     </figure>
     <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Jack Webb is a self-taught musician, originally a guitarist playing in the folk style. He has further expanded his work into the areas of ambient soundscape, scoring, sound design and electronic dance music.</span></p>
@@ -212,11 +232,39 @@
 
 <article class="text-information">
     <figure>
-        <!-- <img src="./images/jack.jpg" alt="" class="mag-photo"> -->
-        <figcaption class="caption-mag"><span class="abc">Tom Pierce</span></figcaption>
+        <img src="./images/tom1.jpeg" alt="Drawing of Tom Pierce" class="mag-photo2">
+        <figcaption class="caption-mag"><span class="abc">Tom Pearce</span></figcaption>
     </figure>
     <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Tom Pearce is an artist and narrative illustrator who studied design and illustration at Camberwell College of Arts. Tom&rsquo;s work is mainly inspired by the feelings and views which can be discovered around London&rsquo;s streets. He likes to explore the little details and idiosyncrasies which fill the city, and the way elements can interact to create unique moments.</span></p>
     <a href="http://www.drawingsofthings.com/?fbclid=IwAR3kpuqvLBoV76CDk4_dCpLysiZJ89wi9UFy1g8RFOn9pxY6926C3-bRA_U" target="_blank"><span class="abc">Click here to see Tom's work.</span></a>
+</article>
+
+<article class="text-information">
+    <figure>
+        <!-- <img src="./images/jack.jpg" alt="" class="mag-photo"> -->
+        <figcaption class="caption-mag"><span class="abc">Dominic Varney</span></figcaption>
+    </figure>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Dominic Varney is a London-based actor and songwriter. He graduated from the University of Manchester in 2017 and the Royal Central School of Speech & Drama in 2019. Since graduating, he has worked in a lot of children’s theatre and has recently starred in a short film, <span class="highlight">Seagull</span>, which has so far won 2 awards at 5 international film festivals. He is currently composing and orchestrating a pop-rock comedy musical about zombies.</span></p>
+    <a href="https://www.spotlight.com/interactive/cv/2779-9057-2257?fbclid=IwAR2OHP18pvd7HjRB4e22ImNIE5g-0J8251BCQ0wUxlFPcyGZwE2bci32FVU" target="_blank"><span class="abc">Click here to see Dominic's profile.</span></a>
+</article>
+
+<article class="text-information">
+    <figure>
+        <!-- <img src="./images/jack.jpg" alt="" class="mag-photo"> -->
+        <figcaption class="caption-mag"><span class="abc">Teodor Mosteanu</span></figcaption>
+    </figure>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>Teodor Mosteanu is a London based web designer and developer. He is implementing projects using a wide range of technologies in order to bring to life the client’s designs and ideas. Having taken part in the project as an author of the Mama Chicken story, Teodor has taken his role one step further in the project by creating the online presence of easyaspietheatre.co.uk.</span></p>
+    <p class="p-small">Copyright © 2020 <a href="https://teodor-mosteanu.github.io/Site/">Teodor Mosteanu</a> - All rights reserved</p>
+    <a href="https://teodor-mosteanu.github.io/Site/" target="_blank"><span class="abc">Click here to see Teodor's portfolio website.</span></a>
+</article>
+<article class="text-information">
+
+    <figure>
+        <img src="./images/STR-Logo-512.jpg" alt="society for theatre research logo" class="mag-photo"> 
+        <figcaption class="caption-mag"><span class="abc">The Society for Theatre Research</span></figcaption>
+    </figure>
+    <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:180%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-family:"Lato",sans-serif;'>The Easy as Pie project is suported by the Scoiety for Theatre research and a recipient of the Covid-19 Support Grant.</span></p>
+    <a href="https://www.str.org.uk/" target="_blank"><span class="abc">Click here to see the STR website.</span></a>
 </article>
 
 

@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="Easy as Pie">
+  <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
+  <meta property="og:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+  <meta property="og:url" content="http://easyaspiethetre.co.uk">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="easyaspietheatre.co.uk">
+  <meta name="twitter:title" content="Easy as Pie Theatre installation">
+  <meta name="twitter:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+  <meta name="twitter:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
   <title>Easy as Pie</title>
   <link rel="icon" type="image/png" href="./images/favicon2.png"/>
   <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> -->
@@ -16,74 +28,72 @@
   <link rel="stylesheet" href="bootstrap.css">
    <!-- Link my style CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/bf96ff4f96.js" crossorigin="anonymous"></script>
 </head>
 <body class="fade">
 
     
           
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light bigger1" style="font-size: 1.5rem;">
-    <a class="navbar-brand" href="./index.html"><span class="abc" style="font-size: 1.5rem;">Easy as Pie</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-<div class="buttons-menu">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mr-auto" href="./index.html">Easy as Pie</a>
 
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>				
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
+
+  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="./index.html"><span class="abc">Home</span> <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Stories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./story.html">Guide</a>
+            <a class="dropdown-item" href="./story.html#slide2">The Cherry Pickers</a>
+
+            <a class="dropdown-item" href="./story.html#slide3">The Tea Maker</a>
+
+            <a class="dropdown-item" href="./story.html#slide4">A taste from my hand</a>
+
+            <a class="dropdown-item" href="./story.html#slide5">Mama Chicken</a>
+
+            
+          </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="abc">Stories</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            
-              <a class="dropdown-item" href="./story.html"><span class="abc">Guide</span></a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./about.html#documentation">Documentation Gallery</a>
 
-              <a class="dropdown-item" href="./story.html#slide2"><span class="abc">The Cherry Pickers</span></a>
+            <a class="dropdown-item" href="./about.html#research">Research</a>
 
-              <a class="dropdown-item" href="./story.html#slide3"><span class="abc">The Tea Maker</span></a>
+            <a class="dropdown-item" href="./about.html#methodology">Creative Writing</a>
 
-              <a class="dropdown-item" href="./story.html#slide4"><span class="abc">A Taste From my Hand</span></a>
-
-              <a class="dropdown-item" href="./story.html#slide5"><span class="abc">Mama Chicken</span></a>
-              
-              <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="./story.html#slide6"><span class="abc">Credits</span></a>
-            </div>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="abc">About</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                  <a class="dropdown-item" href="./about.html#documentation"><span class="abc">Documentation Gallery</span></a>
-
-                  <a class="dropdown-item" href="./about.html#research"><span class="abc">Research</span></a>
-
-                  <a class="dropdown-item" href="./about.html#methodology"><span class="abc">Methodology</span></a>
-
-                  <a class="dropdown-item" href="./about.html#collaborators"><span class="abc">Collaborators</span></a>
-                  
-                  
-
-                  <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../about.html#collaborators">Collaborators</a>
+            <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="./about.html#contact"><span class="abc">Contact</span></a>
-                </div>
-
-        
-        
-          <li class="nav-item active">
-            <a class="nav-link" href="./share.html"><span class="abc">Share your storry</span> <span class="sr-only">(current)</span></a>
-          </li>
+          </div>
         </li>
-
-    </div>   
+        <li class="nav-item active">
+          <a class="nav-link" href="./share.html">Share your story <span class="sr-only">(current)</span></a>
+        </li>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/easyaspiestorytelling" target="_blank"><span class="fa fa-facebook"></span></a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/MagdalenaSzczy" target="_blank"><span class="fa fa-twitter"></span></a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/mosteanu.researcher/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+      </ul>
     </div>
   </nav>
   
@@ -94,11 +104,11 @@
     <!--Guide-->
       <div class="swiper-slide">
         <div class="images-points">
-          <img src="./images/headphones.jpg" alt="" class="headphone">
+          <img src="./images/headphones.jpg" alt="Drawing of girl laying down" class="headphone">
           
-          <img src="./images/intro.jpg" alt="" class="intro-pic">
+          <img src="./images/intro.jpg" alt="Drawing of girl sitting down" class="intro-pic">
          
-          <img src="./images/enjoy.jpg" alt="" class="enjoy">
+          <img src="./images/enjoy.jpg" alt="Drawing of girl sitting down" class="enjoy">
           <h2 class="guide-info">
             Please wear headphones or find a quiet space for the optimal <span class="abc">experience</span>.
        </h2>
@@ -124,8 +134,8 @@
       </div>
        <!--Cherry picker-->
       <div class="swiper-slide" data-hash="slide2" >
-        <div class="cherry">
-          <img src="./images/ally.jpg" alt="" class="welcoming-cherry">
+        <div class="cherry scl">
+          <img src="./images/ally.jpg" alt="Drawing of bucket" class="welcoming-cherry">
 
           <h1 class="cherry-main">
             The Cherry Pickers
@@ -133,7 +143,7 @@
          <figure class="audio-cherry-intro">
           <figcaption><span class="abc">Intro</span></figcaption>
            <audio controls>
-           <source src="./story/Masters/" type="audio/mpeg">
+           <source src="./story/Masters/mp3_INTRO/The Cherry Pickers (3).mp3" type="audio/mpeg">
            Your browser does not support the audio element.
            </audio>
      </figure>
@@ -151,9 +161,9 @@
        </div>
        <!--The Tea Maker-->
       <div class="swiper-slide" data-hash="slide3">
-        <div class="cherry">
+        <div class="cherry scl">
          
-          <img src="./images/newjohn.jpg" alt="" class="welcoming-tea">
+          <img src="./images/newjohn.jpg" alt="Drawing of hands" class="welcoming-tea">
 
           <h1 class="tea-main">
             The Tea Maker
@@ -161,7 +171,7 @@
          <figure class="audio-tea-intro">
           <figcaption><span class="abc">Intro</span></figcaption>
            <audio controls>
-           <source src="./story/Masters/" type="audio/mpeg">
+           <source src="./story/Masters/mp3_INTRO/The Tea Maker (3).mp3" type="audio/mpeg">
            Your browser does not support the audio element.
            </audio>
      </figure>
@@ -181,7 +191,7 @@
 
         <div class="cherry">
          
-          <img src="./images/djamila.png" alt="" class="welcoming-taste">
+          <img src="./images/djamila.png" alt="Drawing of a guitar laying down" class="welcoming-taste">
 
           <h1 class="taste-main">
             A Taste From My Hand
@@ -189,7 +199,7 @@
          <figure class="audio-taste">
               <figcaption><span class="abc">Intro</span></figcaption>
                <audio controls>
-               <source src="./story/Masters/" type="audio/mpeg">
+               <source src="./story/Masters/mp3_INTRO/A Taste From My Hand (3).mp3" type="audio/mpeg">
                Your browser does not support the audio element.
                </audio>
          </figure>
@@ -209,7 +219,7 @@
         
         <div class="cherry">
          
-          <img src="./images/teo.jpg" alt="" class="welcoming-chicken">
+          <img src="./images/teo.jpg" alt="Drawing of a pitchfork and one more tool" class="welcoming-chicken">
 
           <h1 class="chicken-main">
             Mama Chicken
@@ -217,7 +227,7 @@
          <figure class="audio-chicken">
               <figcaption><span class="abc">Intro</span></figcaption>
                <audio controls>
-               <source src="./story/Masters/" type="audio/mpeg">
+               <source src="./story/Masters/mp3_INTRO/Mama Chicken (3).mp3" type="audio/mpeg">
                Your browser does not support the audio element.
                </audio>
          </figure>
@@ -234,7 +244,7 @@
         
       </div>
        <!--Credits-->
-      <div class="swiper-slide" data-hash="slide6">Credits</div>
+      <!-- <div class="swiper-slide" data-hash="slide6">Credits</div> -->
       
     </div>
     <!-- Add Pagination -->

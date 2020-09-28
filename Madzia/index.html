@@ -1,117 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Easy as Pie">
-    <meta property="og:image" content="https://teodor-mosteanu.github.io/Madzia/images/home_guitar_intro.png">
-    <meta property="og:description" content="On-line art installation">
-    <meta property="og:url" content="https://teodor-mosteanu.github.io/Madzia/index.html">
-    <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Easy as Pie">
+  
+  <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
+  <meta property="og:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+  <meta property="og:url" content="http://easyaspiethetre.co.uk">
+  <meta name="twitter:card" content="summary_large_image">
 
-
-    <meta property="og:title" content="Example Page">
-    <meta property="og:image" content="https://example.com/images/image.jpg">
-    <meta property="og:description" content="This is just an example page.">
-    <meta property="og:url" content="https://example.com/page.html">
-    <meta name="twitter:card" content="summary_large_image">
-
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="easyaspietheatre.co.uk">
+  <meta name="twitter:title" content="Easy as Pie Theatre installation">
+  <meta name="twitter:description" content="Easy As Pie is a research project posing the question of food storytelling as a mediator for cross-cultural contact and communication. Food talk has proven a powerful medium for passing on culture, forging memories of home and family, even fostering a value system, however, Easy as Pie project seeks to uncover another function of food storytelling: cross-cultural communication.">
+  <meta name="twitter:image" content="https://s3.eu-west-2.amazonaws.com/easyaspietheatre.co.uk/images/easy_cube.png">
     <title>Easy as Pie</title>
     <link rel="icon" type="image/png" href="./images/favicon2.png"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" href="./images/favicon2.png"/>
     <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bf96ff4f96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style-home.css">
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body class="welcome-page">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-size: x-large;">
-        <a class="navbar-brand" href="./index.html"><span class="abc">Easy as Pie</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-    <div class="buttons-menu">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand mr-auto" href="./index.html">Easy as Pie</a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html"><span class="abc">Home</span> <span class="sr-only">(current)</span></a>
-            </li>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>				
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    </button>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="abc">Stories</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                
-                  <a class="dropdown-item" href="./story.html"><span class="abc">Guide</span></a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Stories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./story.html">Guide</a>
+            <a class="dropdown-item" href="./story.html#slide2">The Cherry Pickers</a>
 
-                  <a class="dropdown-item" href="./story.html#slide2"><span class="abc">The Cherry Pickers</span></a>
+            <a class="dropdown-item" href="./story.html#slide3">The Tea Maker</a>
 
-                  <a class="dropdown-item" href="./story.html#slide3"><span class="abc">The Tea Maker</span></a>
+            <a class="dropdown-item" href="./story.html#slide4">A taste from my hand</a>
 
-                  <a class="dropdown-item" href="./story.html#slide4"><span class="abc">A Taste From my Hand</span></a>
-
-                  <a class="dropdown-item" href="./story.html#slide5"><span class="abc">Mama Chicken</span></a>
-                  
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="./story.html#slide6"><span class="abc">Credits</span></a>
-                </div>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="abc">About</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    
-                      <a class="dropdown-item" href="./about.html#documentation"><span class="abc">Documentation Gallery</span></a>
-
-                      <a class="dropdown-item" href="./about.html#research"><span class="abc">Research</span></a>
-    
-                      <a class="dropdown-item" href="./about.html#methodology"><span class="abc">Methodology</span></a>
-    
-                      <a class="dropdown-item" href="./about.html#collaborators"><span class="abc">Collaborators</span></a>
-                      
-                    
-
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="./about.html#contact"><span class="abc">Contact</span></a>
-                    </div>
+            <a class="dropdown-item" href="./story.html#slide5">Mama Chicken</a>
 
             
-            
-              <li class="nav-item active">
-                <a class="nav-link" href="./share.html"><span class="abc">Share your storry</span> <span class="sr-only">(current)</span></a>
-              </li>
-            </li>
+          </div>
+        </li>
 
-        </div>   
-        </div>
-      </nav>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./about.html#documentation">Documentation Gallery</a>
+
+            <a class="dropdown-item" href="./about.html#research">Research</a>
+
+            <a class="dropdown-item" href="./about.html#methodology">Creative Writing</a>
+
+            <a class="dropdown-item" href="../about.html#collaborators">Collaborators</a>
+            <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="./about.html#contact"><span class="abc">Contact</span></a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./share.html">Share your story <span class="sr-only">(current)</span></a>
+        </li>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/easyaspiestorytelling" target="_blank"><span class="fa fa-facebook"></span></a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/MagdalenaSzczy" target="_blank"><span class="fa fa-twitter"></span></a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/mosteanu.researcher/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+      </ul>
+    </div>
+  </nav>
       <main class="main_container">
        
         <!--tyepwriter -->
 
              <div class="rolling-text">
           <h1>
-               <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Easy as Pie storytelling.", "Click on the image to begin your journey.", "Bon appetit!", "" ]'>
+               <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Easy as Pie storytelling.", "Click on the cube to begin your journey.", "Bon appetit!", "" ]'>
                  <span class="wrap"></span>
                </a>
               </h1>
         </div>
-  
-
-          <div class="main_image_container">
+  <div id="hidden-layer" class="visible fade">
+        <div class="swiper-container2 ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./images/Cube/Cube1.png)"></div>
+            <!-- <div class="swiper-slide" style="background-image:url(./images/Cube/cube6.png)"></div> -->
+            <div class="swiper-slide" style="background-image:url(./images/Cube/cube3.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/Cube/cube4.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/Cube/cube2.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/Cube/cube5.png)"></div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+          <!-- <div class="main_image_container">
             <a href="./story.html">
             <img src="./images/home_guitar_intro.png" alt="" class="welcome">
             </a>
-          </div>
-
+          </div> -->
+        </div>
       </main>
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="script.js"></script>
-</body>
+        <script src="index.js"></script>
 </html>

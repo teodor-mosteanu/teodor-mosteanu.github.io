@@ -1,0 +1,60 @@
+/* .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  } */
+nav {
+    font-family: 'League Script', cursive !important; 
+    font-weight: 800 !important;
+    font-size: 1.5rem !important;
+}
+
+nav .dropdown-menu {
+    border: none;
+}
+nav .dropdown-item {
+    font-weight: 900!important;
+    font-size: 1.2rem;
+}
+
+nav .nav-link {
+    color: black!important;
+}
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+   
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+   
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+   
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+   
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+   
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
