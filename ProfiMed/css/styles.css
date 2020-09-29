@@ -1418,12 +1418,11 @@ input[type='checkbox'] {
 /************************/
 /*     11. Download     */
 /************************/
-.basic-4 {
+/* .basic-4 {
 	padding-top: 6.5rem;
 	padding-bottom: 6.75rem;
-	/* background: url('../images/download-background.jpg') center center no-repeat; */
+	background: url('../images/download-background.jpg') center center no-repeat;
 	background-size: cover; 
-	background-color: white;
 }
 
 .basic-4 .text-container {
@@ -1453,11 +1452,11 @@ input[type='checkbox'] {
 /* .pad {
 	height: 3rem;
 } */
-.basic-4 i{
+/* .basic-4 i{
 	color: black;
 	padding-top: 2rem;
 	
-}
+}  */
 
 /**************************/
 /*     12. Statistics     */
