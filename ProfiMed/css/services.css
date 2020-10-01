@@ -107,3 +107,17 @@
 .basic-9 img {
     margin-top: 2rem;
 }
+
+/* Services */
+
+.bigger {
+    margin-top: 22%!important;
+    height: 70%!important;
+}
+
+/* main services tab */
+
+#features {
+    background-color: white!important;
+    color: black!important;
+}
