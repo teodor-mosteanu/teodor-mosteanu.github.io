@@ -1,0 +1,100 @@
+.basic-10 {
+	padding-top: 5rem;
+	padding-bottom: 0.75rem;
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center center no-repeat; */
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center; */
+	background-size: cover; 
+	overflow: hidden;
+    
+}
+
+
+
+.basic-10 .text-container {
+	margin-bottom: 3.5rem;
+	text-align: center;
+}
+
+.basic-10 h2 {
+   text-align: center;
+   color: #2787a7;
+   margin-top: 1.5rem;
+   font-weight: 200;
+   margin-bottom: 1.25rem;
+   font-size: 3rem;
+}
+
+
+.basic-10 .p-large {
+	margin-bottom: 1.75rem;
+	padding: 0 1rem 0 1rem;
+	color: var(--main-txt-color);
+}
+
+.basic-10 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+/* .pad {
+	height: 3rem;
+} */
+.basic-10 iframe{
+	margin-top: 2rem;
+	
+}
+
+
+/***********************/
+/*     13. Contact     */
+/***********************/
+.form {
+	color: black;
+	padding-top: 6.25rem;
+	padding-bottom: 5.625rem;
+	/* background: url('../images/contact-background.jpg') center bottom no-repeat; */
+	background-color: white;
+	background-size: cover; 
+}
+
+.form h2 {
+	margin-bottom: 1.125rem;
+	text-align: center;
+	color: black;
+}
+
+
+.form h3 {
+	color: black;
+}
+
+.form a {
+	color: black;
+}
+.form .list-unstyled {
+	margin-bottom: 3.75rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: center;
+	color: black!important;
+}
+
+.form .list-unstyled .fas,
+.form .list-unstyled .fab {
+	margin-right: 0.5rem;
+	font-size: 0.875rem;
+	color: #00c9db;
+}
+
+.form .list-unstyled .fa-phone {
+	vertical-align: 3%;
+}
+
+@media only screen and (orientation: portrait) {
+    .basic-10 {
+        padding-top: 2.5rem;
+        background-color: white; 
+	}
+	.form img {
+		margin-bottom: 1rem;
+	}
+}

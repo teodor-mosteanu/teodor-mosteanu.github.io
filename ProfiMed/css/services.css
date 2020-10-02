@@ -13,7 +13,13 @@
         /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center center no-repeat; */
         /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center; */
         background-color: white; 
-    }
+	}
+	.spaced {
+		margin-top: 18rem!important;
+	}
+	.spaced-small {
+		margin-top: 2rem!important;
+	}
 }
 
 .basic-4 .text-container {
@@ -110,9 +116,13 @@
 
 /* Services */
 
-.bigger {
+/* .bigger {
     margin-top: 22%!important;
     height: 70%!important;
+} */
+
+.bigger {
+	margin-top: 2rem;
 }
 
 /* main services tab */
@@ -123,7 +133,10 @@
 }
 
 #features h2,p,h4, .p-large {
-    background-color: white!important;
+  
     color: black!important;
 }
 
+.resized-75 {
+	max-width:1450px!important;
+}

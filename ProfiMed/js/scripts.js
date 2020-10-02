@@ -1,8 +1,3 @@
-/* Template: Leno - Mobile App HTML Landing Page Template
-   Author: Inovatik
-   Created: Mar 2019
-   Description: Custom JS file
-*/
 
 
 (function($) {
@@ -245,7 +240,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Please fill all fields!");
+            csubmitMSG(false, "Va rugam completati toate campurile!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -276,7 +271,7 @@
 
     function cformSuccess() {
         $("#contactForm")[0].reset();
-        csubmitMSG(true, "Message Submitted!");
+        csubmitMSG(true, "Mesaj trimis!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
         $("textarea").removeClass('notEmpty'); // resets the field label after submission
     }
@@ -294,6 +289,7 @@
             var msgClasses = "h3 text-center";
         }
         $("#cmsgSubmit").removeClass().addClass(msgClasses).text(msg);
+        console.log(msg)
     }
 
 
@@ -302,7 +298,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Please fill all fields!");
+            psubmitMSG(false, "Va rugam completati toate campurile!");
         } else {
             // everything looks good!
             event.preventDefault();
