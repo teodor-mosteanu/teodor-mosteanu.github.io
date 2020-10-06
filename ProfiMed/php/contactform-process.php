@@ -2,44 +2,44 @@
 $errorMSG = "";
 
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Va rugam completati numele ";
 } else {
     $name = $_POST["name"];
 }
 
 if (empty($_POST["email"])) {
-    $errorMSG = "Email is required ";
+    $errorMSG = "Va rugam completati e-mailul ";
 } else {
     $email = $_POST["email"];
 }
 
 if (empty($_POST["message"])) {
-    $errorMSG = "Message is required ";
+    $errorMSG = "Va rugam completati mesajul ";
 } else {
     $message = $_POST["message"];
 }
 
 if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
+    $errorMSG = "Bifati casuta cu temeni si contacte ";
 } else {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "yourname@domain.com";
-$Subject = "New message from Leno landing page";
+$EmailTo = "doru06@yahoo.com";
+$Subject = "Mesaj nou de pe site";
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "Nume: ";
 $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Message: ";
+$Body .= "Messaj: ";
 $Body .= $message;
 $Body .= "\n";
-$Body .= "Terms: ";
+$Body .= "Termeni: ";
 $Body .= $terms;
 $Body .= "\n";
 

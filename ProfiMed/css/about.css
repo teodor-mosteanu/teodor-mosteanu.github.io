@@ -1,0 +1,100 @@
+.basic-15 {
+	padding-top: 9rem;
+	padding-bottom: 0.75rem;
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center center no-repeat; */
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center; */
+	background-size: cover; 
+	overflow: hidden;
+    
+}
+
+
+
+.basic-15 .text-container {
+	margin-bottom: 3.5rem;
+	text-align: center;
+}
+
+.basic-15 h2 {
+   text-align: center;
+   color: #2787a7;
+   margin-top: 1.5rem;
+   font-weight: 200;
+   margin-bottom: 1.25rem;
+   font-size: 3rem;
+}
+
+
+.basic-15 .p-large {
+	margin-bottom: 1.75rem;
+	padding: 0 1rem 0 1rem;
+    color: var(--main-txt-color);
+    font-size:1.5rem!important;
+}
+
+.basic-15 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+/* .pad {
+	height: 3rem;
+} */
+.basic-15 iframe{
+	margin-top: 2rem;
+}
+
+
+
+.basic-16 {
+	padding-top: 9rem;
+	padding-bottom: 0.75rem;
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center center no-repeat; */
+    /* background: url('../images/online-marketing-hIgeoQjS_iE-unsplash.jpg') center; */
+	background-size: cover; 
+	overflow: hidden;
+    
+}
+
+
+
+.basic-16 .text-container {
+	margin-bottom: 3.5rem;
+	text-align: center;
+}
+
+.basic-16 h2 {
+   text-align: center;
+   color: #2787a7;
+   margin-top: 1.5rem;
+   font-weight: 200;
+   margin-bottom: 1.25rem;
+   font-size: 3rem;
+}
+
+
+.basic-16 p {
+	margin-bottom: 1.75rem;
+	padding: 0 1rem 0 1rem;
+    color: var(--main-txt-color);
+    font-size:1.5rem!important;
+}
+
+.basic-16 .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+.basic-16 figcaption {
+   color: #2787a7;
+   font-weight: 200;
+   margin-bottom: 1.25rem;
+   font-size: 1rem;
+   margin-left: 1rem;
+}
+/* .pad {
+	height: 3rem;
+} */
+/* .basic-16 img{
+	border-radius: 50%;
+	
+} */

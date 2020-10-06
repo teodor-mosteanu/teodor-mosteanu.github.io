@@ -598,7 +598,8 @@ input[type='checkbox'] {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: #2f2c3d;
+	/* background: #2f2c3d; */
+	background: var(--main-bg-color);
 }
 
 .spinner {
