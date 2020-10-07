@@ -8,7 +8,9 @@
     
 }
 
-
+.basic-15 blockquote{
+    line-height: 1.5;
+}
 
 .basic-15 .text-container {
 	margin-bottom: 3.5rem;
@@ -19,7 +21,7 @@
    text-align: center;
    color: #2787a7;
    margin-top: 1.5rem;
-   font-weight: 200;
+   font-weight: bold;
    margin-bottom: 1.25rem;
    font-size: 3rem;
 }
@@ -66,10 +68,16 @@
    text-align: center;
    color: #2787a7;
    margin-top: 1.5rem;
-   font-weight: 200;
+   font-weight: bold;
    margin-bottom: 1.25rem;
    font-size: 3rem;
 }
+
+.basic-16 .show-case {
+    height: 30rem;
+    width: 10rem;
+    object-fit: cover;
+ }
 
 
 .basic-16 p {
@@ -77,6 +85,7 @@
 	padding: 0 1rem 0 1rem;
     color: var(--main-txt-color);
     font-size:1.5rem!important;
+    line-height: 1.5;
 }
 
 .basic-16 .btn-solid-lg {
@@ -94,7 +103,8 @@
 /* .pad {
 	height: 3rem;
 } */
-/* .basic-16 img{
-	border-radius: 50%;
+.basic-16 .portraits{
+    height: 12rem;
+    width: 11rem;
 	
-} */
+}

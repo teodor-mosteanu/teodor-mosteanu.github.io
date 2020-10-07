@@ -31,7 +31,7 @@
    text-align: center;
    color: #2787a7;
    margin-top: 1.5rem;
-   font-weight: 200;
+   font-weight: bold;
    margin-bottom: 1.25rem;
    font-size: 3rem;
 }
@@ -132,7 +132,7 @@
     color: black!important;
 }
 
-#features h2,p,h4, .p-large {
+#features p,h4, .p-large {
   
     color: black!important;
 }
